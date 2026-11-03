@@ -7,16 +7,14 @@ export type DiagramMeta = {
 
 export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	'sdt-spectrum': {
-		caption:
-			'Nach Ryan & Deci (2000): von links fremdbestimmt nach rechts selbstbestimmt — Amotivation, dann vier Stufen extrinsischer Regulierung (extern = Belohnung/Strafe; introjiziert = Stolz/Schuld/innerer Druck; identifiziert = persönliche Bedeutung; integriert = Übereinstimmung mit eigenen Werten) bis intrinsische Motivation. Auch „extrinsisch“ kann so schrittweise autonomer werden.',
+		caption: 'Kontinuum der Selbstbestimmung nach Ryan & Deci (2000) — von Amotivation bis intrinsischer Motivation.',
 		longDescription:
-			'Horizontales Kontinuum der Motivationsregulation: Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung als gruppierte extrinsische Stufen mit steigender Internalisierung, rechts intrinsische Motivation. Achse von fremdbestimmt zu selbstbestimmt; Pfeil symbolisiert zunehmende Autonomie.'
+			'Horizontales Säulenlayout: sechs Stufen (Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung, intrinsische Motivation) mit Kurztext pro Stufe; Klammer „Extrinsische Motivation“ über vier mittlere Stufen; Achse von nicht selbstbestimmt nach selbstbestimmt; Pfeil für steigende Autonomie und Internalisierung.'
 	},
 	'sdt-needs': {
-		caption:
-			'Autonomie, Kompetenz und soziale Eingebundenheit sind Bedingungen, die intrinsische Motivation stützen — Pfeile zeigen ihre konvergierende Wirkung auf das Ziel „intrinsische Motivation“.',
+		caption: 'Die drei Grundbedürfnisse nach Deci & Ryan (2000).',
 		longDescription:
-			'Drei Bedürfnisfelder in einer violetten Farbfamilie oben; Pfeile führen zu einer zentralen Ellipse „Intrinsische Motivation“. Legende erklärt die unterstützende Rolle der Grundbedürfnisse.'
+			'Drei Säulen (Kompetenz, Autonomie, Eingebundenheit) mit Kopf und mehrzeiligem Kurztext in der Spalte; oben Verbindungslinie. Breit nebeneinander, schmal untereinander gestapelt.'
 	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',

@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { FrameworkReference, FrameworkSource } from '#lib/data/frameworkContent/types';
+	import FrameworkReferenceList from './FrameworkReferenceList.svelte';
 	import type { Snippet } from 'svelte';
 
 	export type KeyTerm = {
@@ -6,11 +8,7 @@
 		definition: string;
 	};
 
-	export type Source = {
-		label: string;
-		note?: string;
-		href?: string;
-	};
+	export type Source = FrameworkSource;
 
 	interface Props {
 		tag: string;
@@ -18,6 +16,7 @@
 		lead: string;
 		keyTerms?: KeyTerm[];
 		sources?: Source[];
+		references?: FrameworkReference[];
 		backHref?: string;
 		backLabel?: string;
 		articleBody: Snippet;
@@ -30,6 +29,7 @@
 		lead,
 		keyTerms = [],
 		sources = [],
+		references = [],
 		backHref = '/frameworks',
 		backLabel = 'Zurück zum Framework-Hub',
 		articleBody,
@@ -54,11 +54,13 @@
 		<p class="lead">{lead}</p>
 	</header>
 
-	<div class="article-grid" class:has-sidebar={!!sidebar || keyTerms.length > 0}>
+	<div class="article-grid" class:has-sidebar={!!sidebar}>
 		<div class="article-main">
 			{@render articleBody()}
 
-			{#if sources.length > 0}
+			<FrameworkReferenceList {references} />
+
+			{#if references.length === 0 && sources.length > 0}
 				<section class="sources glass-panel" aria-labelledby="sources-title">
 					<h2 id="sources-title">Quellen &amp; Pflichtlektüre</h2>
 					<ul>
@@ -78,6 +80,21 @@
 				</section>
 			{/if}
 
+			{#if keyTerms.length > 0}
+				<section class="terms-tldr glass-panel" aria-labelledby="terms-tldr-title">
+					<h2 id="terms-tldr-title">Kernbegriffe auf einen Blick</h2>
+					<p class="terms-tldr-lead">TL;DR — die wichtigsten Begriffe zum Mitnehmen.</p>
+					<dl class="terms-chip-list">
+						{#each keyTerms as entry (entry.term)}
+							<div class="term-chip">
+								<dt><span class="term-chip-label">{entry.term}</span></dt>
+								<dd>{entry.definition}</dd>
+							</div>
+						{/each}
+					</dl>
+				</section>
+			{/if}
+
 			<p class="back-link">
 				<a class="link-arrow" href={backHref}>{backLabel} →</a>
 			</p>
@@ -86,20 +103,6 @@
 		{#if sidebar}
 			<aside class="article-sidebar">
 				{@render sidebar()}
-			</aside>
-		{:else if keyTerms.length > 0}
-			<aside class="article-sidebar" aria-labelledby="terms-title">
-				<div class="terms glass-panel">
-					<h2 id="terms-title">Kernbegriffe</h2>
-					<dl>
-						{#each keyTerms as entry (entry.term)}
-							<div class="term-row">
-								<dt>{entry.term}</dt>
-								<dd>{entry.definition}</dd>
-							</div>
-						{/each}
-					</dl>
-				</div>
 			</aside>
 		{/if}
 	</div>
@@ -229,45 +232,64 @@
 		margin: 2rem 0 0;
 	}
 
-	.terms {
-		padding: 1rem 1.05rem;
-		position: sticky;
-		top: 5.5rem;
+	.terms-tldr {
+		margin-top: 2rem;
+		padding: 1.15rem 1.2rem;
 	}
 
-	.terms h2 {
-		margin: 0 0 0.85rem;
-		font-size: 0.85rem;
-		text-transform: uppercase;
-		letter-spacing: 0.06em;
+	.terms-tldr h2 {
+		margin: 0 0 0.35rem;
+		font-size: 1.15rem;
+		color: var(--color-text);
+	}
+
+	.terms-tldr-lead {
+		margin: 0 0 1rem;
+		font-size: 0.875rem;
 		color: var(--color-muted);
 	}
 
-	dl {
+	.terms-chip-list {
 		margin: 0;
 		display: grid;
-		gap: 0.85rem;
+		gap: 0.75rem;
+		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
 	}
 
-	dt {
+	.term-chip {
+		margin: 0;
+		padding: 0.75rem 0.85rem;
+		border-radius: var(--radius-md);
+		border: 1px solid var(--color-border);
+		background: var(--color-surface-solid);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.term-chip dt {
+		margin: 0;
+	}
+
+	.term-chip-label {
+		display: inline-block;
+		padding: 0.2rem 0.55rem;
+		border-radius: 999px;
+		font-size: 0.8125rem;
 		font-weight: 700;
-		font-size: 0.9rem;
+		color: var(--color-accent-strong);
+		background: var(--color-accent-soft);
+		border: 1px solid rgba(124, 58, 237, 0.18);
 	}
 
-	dd {
-		margin: 0.2rem 0 0;
+	.term-chip dd {
+		margin: 0.55rem 0 0;
 		font-size: 0.875rem;
 		line-height: 1.5;
-		color: var(--color-muted);
+		color: var(--color-text);
 	}
 
 	@media (max-width: 52rem) {
 		.article-grid.has-sidebar {
 			grid-template-columns: 1fr;
-		}
-
-		.terms {
-			position: static;
 		}
 	}
 </style>

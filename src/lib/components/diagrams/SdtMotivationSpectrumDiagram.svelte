@@ -1,32 +1,60 @@
-<svg viewBox="0 0 560 136" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<svg
+	viewBox="0 0 720 194"
+	width="100%"
+	preserveAspectRatio="xMidYMid meet"
+	xmlns="http://www.w3.org/2000/svg"
+	aria-hidden="true"
+>
 	<defs>
-		<linearGradient id="sdt-reg-axis" x1="0%" y1="0%" x2="100%" y2="0%">
+		<linearGradient id="sdt-cont-axis-h" x1="0%" y1="0%" x2="100%" y2="0%">
 			<stop offset="0%" stop-color="#64748b" />
 			<stop offset="100%" stop-color="#5b21b6" />
 		</linearGradient>
 	</defs>
-	<text x="280" y="20" text-anchor="middle" class="diagram-title">Kontinuum der Motivationsregulation (SDT)</text>
-	<text x="28" y="40" class="diagram-muted">← Fremdbestimmt</text>
-	<text x="532" y="40" text-anchor="end" class="diagram-muted">Selbstbestimmt →</text>
 
-	<rect x="100" y="46" width="288" height="46" rx="6" fill="none" stroke="var(--diagram-segment-border)" stroke-width="1.5" stroke-dasharray="4 3" />
-	<text x="244" y="44" text-anchor="middle" class="diagram-muted">Extrinsische Regulierung (steigende Internalisierung)</text>
+	<text x="20" y="28" class="diagram-muted">Nicht selbstbestimmt ←</text>
+	<text x="700" y="28" text-anchor="end" class="diagram-muted">→ Selbstbestimmt</text>
 
-	<rect x="28" y="52" width="72" height="28" rx="6" class="diagram-segment diagram-segment-amotivation" />
-	<rect x="100" y="52" width="72" height="28" class="diagram-segment diagram-segment-external" />
-	<rect x="172" y="52" width="72" height="28" class="diagram-segment diagram-segment-introjected" />
-	<rect x="244" y="52" width="72" height="28" class="diagram-segment diagram-segment-identified" />
-	<rect x="316" y="52" width="72" height="28" class="diagram-segment diagram-segment-integrated" />
-	<rect x="388" y="52" width="144" height="28" rx="6" class="diagram-segment diagram-segment-intrinsic" />
+	<path
+		d="M 118 58 L 118 46 L 598 46 L 598 58"
+		fill="none"
+		stroke="var(--diagram-segment-border)"
+		stroke-width="1.5"
+	/>
+	<text x="358" y="40" text-anchor="middle" class="diagram-label">Extrinsische Motivation</text>
 
-	<text x="64" y="98" text-anchor="middle" class="diagram-label">Amotivation</text>
-	<text x="136" y="98" text-anchor="middle" class="diagram-label">Extern</text>
-	<text x="208" y="98" text-anchor="middle" class="diagram-label">Introjiziert</text>
-	<text x="280" y="98" text-anchor="middle" class="diagram-label">Identifiziert</text>
-	<text x="352" y="98" text-anchor="middle" class="diagram-label">Integriert</text>
-	<text x="460" y="98" text-anchor="middle" class="diagram-label">Intrinsische Motivation</text>
+	<rect x="20" y="62" width="88" height="24" rx="6" class="diagram-segment diagram-segment-amotivation" />
+	<rect x="118" y="62" width="115" height="24" class="diagram-segment diagram-segment-external" />
+	<rect x="233" y="62" width="115" height="24" class="diagram-segment diagram-segment-introjected" />
+	<rect x="348" y="62" width="115" height="24" class="diagram-segment diagram-segment-identified" />
+	<rect x="463" y="62" width="115" height="24" class="diagram-segment diagram-segment-integrated" />
+	<rect x="568" y="62" width="132" height="24" rx="6" class="diagram-segment diagram-segment-intrinsic" />
 
-	<line x1="40" y1="112" x2="520" y2="112" stroke="url(#sdt-reg-axis)" stroke-width="3" stroke-linecap="round" />
-	<polygon points="520,112 512,108 512,116" fill="#5b21b6" />
-	<text x="280" y="128" text-anchor="middle" class="diagram-muted">Zunehmende Autonomie und Annäherung an intrinsische Qualität</text>
+	{#each [
+		{ cx: 64, title: ['Amotivation'], desc: ['Keine klare', 'motivationale Ausrichtung'] },
+		{ cx: 175, title: ['Externe', 'Regulierung'], desc: ['Belohnung oder Druck', 'von außen'] },
+		{ cx: 290, title: ['Introjizierte', 'Regulierung'], desc: ['Stolz, Schuld,', 'innerer Druck'] },
+		{ cx: 405, title: ['Identifizierte', 'Regulierung'], desc: ['Bewusst wichtige', 'persönliche Werte'] },
+		{ cx: 520, title: ['Integrierte', 'Regulierung'], desc: ['Mit dem Selbst', 'verbunden'] },
+		{
+			cx: 634,
+			title: ['Intrinsische', 'Motivation'],
+			desc: ['Interesse und Befriedigung', 'in der Tätigkeit selbst']
+		}
+	] as col (col.cx)}
+		<text x={col.cx} y="108" text-anchor="middle" class="diagram-label">
+			{#each col.title as line, i (line)}
+				<tspan x={col.cx} dy={i === 0 ? 0 : 14}>{line}</tspan>
+			{/each}
+		</text>
+		<text x={col.cx} y="148" text-anchor="middle" class="diagram-desc">
+			{#each col.desc as line, i (line)}
+				<tspan x={col.cx} dy={i === 0 ? 0 : 13}>{line}</tspan>
+			{/each}
+		</text>
+	{/each}
+
+	<line x1="32" y1="188" x2="688" y2="188" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
+	<polygon points="688,188 678,183 678,193" fill="#5b21b6" />
 </svg>
+

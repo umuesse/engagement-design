@@ -43,37 +43,76 @@
 	const meta = $derived(diagramMeta[id]);
 	const Diagram = $derived(components[id]);
 	const captionId = $derived(`diagram-caption-${id}`);
+	const descriptionId = $derived(`diagram-description-${id}`);
 </script>
 
-<figure class="framework-diagram glass-panel">
-	<div class="diagram-frame" role="img" aria-labelledby={captionId}>
+<figure
+	class="framework-diagram glass-panel"
+	class:sdt-spectrum={id === 'sdt-spectrum'}
+	class:sdt-needs={id === 'sdt-needs'}
+	aria-labelledby={captionId}
+	aria-describedby={descriptionId}
+>
+	<div class="diagram-frame">
 		<Diagram />
 	</div>
-	<figcaption id={captionId}>
-		{meta.caption}
-		<span class="sr-only">{meta.longDescription}</span>
-	</figcaption>
+	<figcaption id={captionId}>{meta.caption}</figcaption>
+	<p id={descriptionId} class="sr-only">{meta.longDescription}</p>
 </figure>
 
 <style>
 	.framework-diagram {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.75rem;
 		margin: 0 0 1.75rem;
-		padding: 1rem 1rem 0.85rem;
-		border: 1px solid var(--color-border);
+		padding: 1.15rem 1.25rem;
 		overflow: hidden;
+		box-sizing: border-box;
+	}
+
+	.framework-diagram.sdt-spectrum {
+		overflow: visible;
 	}
 
 	.diagram-frame {
 		width: 100%;
 		overflow-x: auto;
+		overflow-y: visible;
+		min-height: 0;
+		flex: 0 0 auto;
+	}
+
+	.framework-diagram.sdt-spectrum .diagram-frame {
+		overflow-x: auto;
 	}
 
 	.diagram-frame :global(svg) {
-		display: block;
 		width: 100%;
-		max-width: 36rem;
+		max-width: 40rem;
 		margin: 0 auto;
 		height: auto;
+	}
+
+	/* Responsive Dual-SVG (sdt-needs): display per Kind-Komponente, nicht überschreiben */
+	.diagram-frame :global(svg:not(.layout-horizontal):not(.layout-vertical)) {
+		display: block;
+	}
+
+	.framework-diagram.sdt-spectrum .diagram-frame :global(svg),
+	.framework-diagram.sdt-needs .diagram-frame :global(svg) {
+		max-width: 45rem;
+		min-width: min(100%, 20rem);
+	}
+
+	.framework-diagram.sdt-needs {
+		overflow: visible;
+	}
+
+	.framework-diagram.sdt-needs .diagram-frame :global(.diagram-label-on-dark) {
+		font-size: 12px;
+		font-weight: 700;
 	}
 
 	.diagram-frame :global(.diagram-label) {
@@ -92,6 +131,13 @@
 
 	.diagram-frame :global(.diagram-muted) {
 		fill: var(--diagram-text-muted);
+		font-size: 10px;
+		font-weight: 500;
+	}
+
+	.diagram-frame :global(.diagram-desc) {
+		fill: var(--diagram-text-muted);
+		font-family: var(--font-sans);
 		font-size: 10px;
 		font-weight: 500;
 	}
@@ -133,7 +179,8 @@
 	}
 
 	figcaption {
-		margin-top: 0.75rem;
+		margin: 0;
+		flex: 0 0 auto;
 		font-size: 0.8125rem;
 		line-height: 1.45;
 		color: var(--color-muted);
@@ -141,5 +188,17 @@
 		max-width: 36rem;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.framework-diagram :global(.sr-only) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
 	}
 </style>

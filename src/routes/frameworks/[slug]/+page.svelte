@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FrameworkDiagram from '#lib/components/diagrams/FrameworkDiagram.svelte';
+	import FrameworkDiagramList from '#lib/components/diagrams/FrameworkDiagramList.svelte';
 	import FrameworkArticle from '#lib/components/framework/FrameworkArticle.svelte';
 	import FrameworkContentBlocks from '#lib/components/framework/FrameworkContentBlocks.svelte';
 	import type { PageProps } from './$types';
@@ -18,12 +18,25 @@
 	title={article.title}
 	lead={article.lead}
 	keyTerms={article.keyTerms}
-	sources={article.sources}
+	sources={article.sources ?? []}
+	references={article.references ?? []}
 >
 	{#snippet articleBody()}
-		{#each article.diagramIds as diagramId (diagramId)}
-			<FrameworkDiagram id={diagramId} />
-		{/each}
-		<FrameworkContentBlocks blocks={article.blocks} />
+		{#if article.sections?.length}
+			{#each article.sections as section, index (index)}
+				{#if section.blocksBeforeDiagram?.length}
+					<FrameworkContentBlocks blocks={section.blocksBeforeDiagram} />
+				{/if}
+				{#if section.diagramIds?.length}
+					<FrameworkDiagramList ids={section.diagramIds} />
+				{/if}
+				{#if section.blocks.length}
+					<FrameworkContentBlocks blocks={section.blocks} />
+				{/if}
+			{/each}
+		{:else}
+			<FrameworkDiagramList ids={article.diagramIds} />
+			<FrameworkContentBlocks blocks={article.blocks} />
+		{/if}
 	{/snippet}
 </FrameworkArticle>
