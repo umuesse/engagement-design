@@ -39,7 +39,7 @@ export const frameworkGroups: FrameworkGroup[] = [
 				'sdt',
 				'Self-Determination Theory (SDT)',
 				'SDT',
-				'Autonomie, Kompetenz, Eingebundenheit — intrinsische Motivation statt PBL-Quickfixes.'
+				'Autonomie, Kompetenz, Eingebundenheit — Kontinuum der Motivationsregulation nach Deci & Ryan.'
 			),
 			item('flow', 'Flow Theory', 'Flow', 'Optimale Erfahrung zwischen Über- und Unterforderung.'),
 			item('arcs', 'ARCS-Modell', 'ARCS', 'Attention, Relevance, Confidence, Satisfaction — Motivation strukturieren.')
