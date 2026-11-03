@@ -1,17 +1,13 @@
 import { error } from '@sveltejs/kit';
-import { getFrameworkBySlug } from '#lib/data/frameworks';
+import { getFrameworkArticle } from '#lib/data/frameworkContent';
 import type { PageLoad } from './$types';
 
 export const load: PageLoad = ({ params }) => {
-	const entry = getFrameworkBySlug(params.slug);
+	const content = getFrameworkArticle(params.slug);
 
-	if (!entry) {
+	if (!content) {
 		error(404, 'Framework nicht gefunden');
 	}
 
-	if (entry.status === 'published') {
-		error(404, 'Framework nicht gefunden');
-	}
-
-	return { entry };
+	return { content };
 };

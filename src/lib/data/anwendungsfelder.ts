@@ -24,8 +24,8 @@ export const applicationFields: ApplicationField[] = [
 			'Konzept für einen modularen Workshop-Block: SDT-gestützte Wahlmöglichkeiten, Flow-Momente in Übungen und Peer-Feedback statt reiner Punkte.',
 		accent: '#7c3aed',
 		frameworkHints: [
-			{ label: 'SDT — Autonomie & Kompetenz', href: '/frameworks/sdt' },
-			{ label: 'Flow (bald)', href: '/frameworks/flow' }
+			{ label: 'SDT', href: '/frameworks/sdt' },
+			{ label: 'Flow', href: '/frameworks/flow' }
 		]
 	},
 	{
@@ -38,8 +38,8 @@ export const applicationFields: ApplicationField[] = [
 			'Redesign einer „Schritte-App“-Logik: Fogg-Prompts nur dort, wo sie unterstützen; klare Ethik-Reflexion zu Belohnungsdruck und Ausgrenzung.',
 		accent: '#db2777',
 		frameworkHints: [
-			{ label: 'Fogg Behavior Model (bald)', href: '/frameworks/fogg' },
-			{ label: 'Dark Patterns & Ethik (bald)', href: '/frameworks/dark-patterns' }
+			{ label: 'Fogg Behavior Model', href: '/frameworks/fogg' },
+			{ label: 'Dark Patterns & Ethik', href: '/frameworks/dark-patterns' }
 		]
 	},
 	{
@@ -52,8 +52,8 @@ export const applicationFields: ApplicationField[] = [
 			'Engagement-Konzept für eine Hochschul-Campaign: Epic Meaning (Octalysis), sichtbarer Community-Impact und transparente Wirkung statt Badge-Sammeln.',
 		accent: '#059669',
 		frameworkHints: [
-			{ label: 'Octalysis (bald)', href: '/frameworks/octalysis' },
-			{ label: 'SDT — Bedeutung & Eingebundenheit', href: '/frameworks/sdt' }
+			{ label: 'Octalysis', href: '/frameworks/octalysis' },
+			{ label: 'SDT', href: '/frameworks/sdt' }
 		]
 	},
 	{
@@ -66,8 +66,8 @@ export const applicationFields: ApplicationField[] = [
 			'Service Blueprint für Onboarding: Touchpoints, HEXAD-basierte Personas und kritische Stellen, an denen extrinsische KPIs Autonomie untergraben.',
 		accent: '#0891b2',
 		frameworkHints: [
-			{ label: 'HEXAD Player Types (bald)', href: '/frameworks/hexad' },
-			{ label: 'Framework-Hub', href: '/frameworks' }
+			{ label: 'HEXAD', href: '/frameworks/hexad' },
+			{ label: 'Service Design', href: '/frameworks/service-design' }
 		]
 	},
 	{
@@ -80,8 +80,8 @@ export const applicationFields: ApplicationField[] = [
 			'Partizipationsformat für lokale Planung: Meaningful Gamification (RECIPE), klare Informationsphase und Schutz vor Social-Pressure-Patterns.',
 		accent: '#ea580c',
 		frameworkHints: [
-			{ label: 'Meaningful Gamification / RECIPE (bald)', href: '/frameworks/meaningful-gamification' },
-			{ label: 'Dark Patterns & Ethik (bald)', href: '/frameworks/dark-patterns' }
+			{ label: 'RECIPE', href: '/frameworks/meaningful-gamification' },
+			{ label: 'Dark Patterns', href: '/frameworks/dark-patterns' }
 		]
 	}
 ];

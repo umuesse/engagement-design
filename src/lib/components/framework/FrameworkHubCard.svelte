@@ -29,12 +29,8 @@
 							<span class="link-title">{entry.shortLabel}</span>
 							<span class="link-summary">{entry.summary}</span>
 						</span>
-						<span class="status">
-							{#if entry.status === 'published'}
-								Vertiefung
-							{:else}
-								Bald
-							{/if}
+						<span class="status" class:live={entry.status === 'published'}>
+							{entry.status === 'published' ? 'Live' : 'Bald'}
 						</span>
 					</a>
 				</li>
@@ -129,7 +125,7 @@
 		color: var(--color-muted);
 	}
 
-	.published .status {
+	.status.live {
 		background: var(--group-accent);
 		color: #fff;
 	}

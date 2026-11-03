@@ -23,10 +23,9 @@ function item(
 	title: string,
 	shortLabel: string,
 	summary: string,
-	status: FrameworkStatus = 'soon'
+	status: FrameworkStatus = 'published'
 ): FrameworkItem {
-	const href = status === 'published' ? `/frameworks/${slug}` : `/frameworks/${slug}`;
-	return { slug, title, shortLabel, status, href, summary };
+	return { slug, title, shortLabel, status, href: `/frameworks/${slug}`, summary };
 }
 
 export const frameworkGroups: FrameworkGroup[] = [
@@ -40,8 +39,7 @@ export const frameworkGroups: FrameworkGroup[] = [
 				'sdt',
 				'Self-Determination Theory (SDT)',
 				'SDT',
-				'Autonomie, Kompetenz, Eingebundenheit — intrinsische Motivation statt PBL-Quickfixes.',
-				'published'
+				'Autonomie, Kompetenz, Eingebundenheit — intrinsische Motivation statt PBL-Quickfixes.'
 			),
 			item('flow', 'Flow Theory', 'Flow', 'Optimale Erfahrung zwischen Über- und Unterforderung.'),
 			item('arcs', 'ARCS-Modell', 'ARCS', 'Attention, Relevance, Confidence, Satisfaction — Motivation strukturieren.')
@@ -74,7 +72,12 @@ export const frameworkGroups: FrameworkGroup[] = [
 		description: 'Ethik, Dark Patterns und nachhaltige Motivation.',
 		accent: '#ea580c',
 		items: [
-			item('meaningful-gamification', 'Meaningful Gamification / RECIPE', 'RECIPE', 'Intrinsische Tiefe statt Oberflächen-PBL.'),
+			item(
+				'meaningful-gamification',
+				'Meaningful Gamification / RECIPE',
+				'RECIPE',
+				'Intrinsische Tiefe statt Oberflächen-PBL.'
+			),
 			item('dark-patterns', 'Ethics & Dark Patterns', 'Ethik', 'Manipulation vs. verantwortungsvolles Engagement.')
 		]
 	},

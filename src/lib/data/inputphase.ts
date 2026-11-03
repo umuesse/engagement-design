@@ -21,7 +21,8 @@ export const inputDays: InputDay[] = [
 			'Engagement Design von Gamification abgrenzen und zentrale Begriffe sicher verwenden',
 			'Modulüberblick (Input- und Projektphase) nachvollziehen und eigene Lernziele formulieren',
 			'Die Perspektive „Erfahrung statt reiner Spielmechanik“ in eigenen Worten erklären'
-		]
+		],
+		frameworkLinks: [{ href: '/frameworks', label: 'Framework-Hub' }]
 	},
 	{
 		day: 2,
@@ -32,10 +33,10 @@ export const inputDays: InputDay[] = [
 			'Flow (Balance aus Challenge und Skill) für Lern- oder Produktsettings beschreiben',
 			'Mit dem ARCS-Modell Motivationslücken in einem Szenario strukturieren'
 		],
-		frameworkHint: '/frameworks',
 		frameworkLinks: [
-			{ href: '/frameworks/sdt', label: 'SDT vertiefen' },
-			{ href: '/frameworks', label: 'Framework-Hub' }
+			{ href: '/frameworks/sdt', label: 'SDT' },
+			{ href: '/frameworks/flow', label: 'Flow' },
+			{ href: '/frameworks/arcs', label: 'ARCS' }
 		]
 	},
 	{
@@ -47,7 +48,12 @@ export const inputDays: InputDay[] = [
 			'HEXAD-Typen für eine Zielgruppenanalyse im Projekt nutzen',
 			'MDA sowie das Fogg Behavior Model auf ein Engagement-Szenario übertragen'
 		],
-		frameworkHint: '/frameworks'
+		frameworkLinks: [
+			{ href: '/frameworks/octalysis', label: 'Octalysis' },
+			{ href: '/frameworks/hexad', label: 'HEXAD' },
+			{ href: '/frameworks/mda', label: 'MDA' },
+			{ href: '/frameworks/fogg', label: 'Fogg' }
+		]
 	},
 	{
 		day: 4,
@@ -57,6 +63,11 @@ export const inputDays: InputDay[] = [
 			'Dark Patterns von verantwortungsvollem Engagement Design unterscheiden',
 			'Meaningful Gamification / RECIPE-Prinzipien erklären und beispielhaft anwenden',
 			'Die Grenze zwischen Engagement und Manipulation in einer kurzen Reflexion benennen'
+		],
+		frameworkLinks: [
+			{ href: '/frameworks/meaningful-gamification', label: 'RECIPE' },
+			{ href: '/frameworks/dark-patterns', label: 'Dark Patterns' },
+			{ href: '/frameworks/hook', label: 'Hook Model' }
 		]
 	},
 	{
@@ -68,8 +79,10 @@ export const inputDays: InputDay[] = [
 			'Touchpoints und Journey-Schritte für ein Service-basiertes Engagement skizzieren',
 			'Die Projektphase vorbereiten: Thema, Frameworks, nächste Schritte festlegen'
 		],
-		frameworkHint: '/modul/projektphase',
 		frameworkLinks: [
+			{ href: '/frameworks/hcd', label: 'HCD' },
+			{ href: '/frameworks/experience-design', label: 'Experience Design' },
+			{ href: '/frameworks/service-design', label: 'Service Design' },
 			{ href: '/modul/projektphase', label: 'Projektphase' },
 			{ href: '/anwendungsfelder', label: 'Anwendungsfelder' }
 		]

@@ -11,7 +11,7 @@
 <PageIntro
 	tag="Theorie & Werkzeuge"
 	title="Framework-Hub"
-	lead="Sechs Blöcke aus der Modulplanung — von Motivationspsychologie bis Anwendungsfelder. Starte mit der SDT-Vertiefung; weitere Seiten folgen Schritt für Schritt."
+	lead="Sechs Blöcke aus der Modulplanung — von Motivationspsychologie bis Anwendungsfelder. Alle Framework-Vertiefungen sind verlinkt; SDT ist ein guter Einstieg nach Tag 2."
 />
 
 <div class="hub-grid">
