@@ -19,6 +19,8 @@
 		references?: FrameworkReference[];
 		backHref?: string;
 		backLabel?: string;
+		hubHref?: string;
+		hubLabel?: string;
 		articleBody: Snippet;
 		sidebar?: Snippet;
 	}
@@ -32,6 +34,8 @@
 		references = [],
 		backHref = '/frameworks',
 		backLabel = 'Zurück zum Framework-Hub',
+		hubHref = '/frameworks',
+		hubLabel = 'Frameworks',
 		articleBody,
 		sidebar
 	}: Props = $props();
@@ -42,7 +46,7 @@
 		<ol>
 			<li><a href="/">Start</a></li>
 			<li aria-hidden="true">/</li>
-			<li><a href="/frameworks">Frameworks</a></li>
+			<li><a href={hubHref}>{hubLabel}</a></li>
 			<li aria-hidden="true">/</li>
 			<li><span aria-current="page">{title}</span></li>
 		</ol>

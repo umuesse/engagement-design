@@ -29,8 +29,12 @@
 							<span class="link-title">{entry.shortLabel}</span>
 							<span class="link-summary">{entry.summary}</span>
 						</span>
-						<span class="status" class:live={entry.status === 'published'}>
-							{entry.status === 'published' ? 'Live' : 'Bald'}
+						<span
+							class="status"
+							class:live={entry.status === 'published'}
+							aria-label={entry.status === 'published' ? 'Inhalt verfügbar' : 'In Vorbereitung'}
+						>
+							{entry.status === 'published' ? 'Live' : 'In Vorbereitung'}
 						</span>
 					</a>
 				</li>

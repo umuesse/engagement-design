@@ -11,7 +11,7 @@
 <PageIntro
 	tag="Theorie & Werkzeuge"
 	title="Framework-Hub"
-	lead="Sechs Blöcke aus der Modulplanung — von Motivationspsychologie bis Anwendungsfelder. Alle Framework-Vertiefungen sind verlinkt; SDT ist ein guter Einstieg nach Tag 2."
+	lead="Themenblöcke aus der Modulplanung — von Motivationspsychologie bis Anwendungsfelder. Einträge mit Status „In Vorbereitung“ sind bereits verlinkt; SDT ist ein guter Einstieg nach Tag 2."
 />
 
 <div class="hub-grid">
@@ -25,6 +25,14 @@
 	<p>
 		In der <a href="/modul/inputphase">Inputphase Tag 2</a> lernst du SDT, Flow und ARCS kennen. Für Tiefe:
 		<a class="link-arrow" href="/frameworks/sdt">Self-Determination Theory (SDT) →</a>
+	</p>
+</section>
+
+<section class="glass-panel highlight" aria-labelledby="methods-title">
+	<h2 id="methods-title">Designmethoden</h2>
+	<p>
+		Prozess und Evaluation: <a href="/methods">Designmethoden</a> (ISO 9241-210, Double Diamond) — getrennt von
+		psychologischen Frameworks auf dieser Seite.
 	</p>
 </section>
 

@@ -1,5 +1,9 @@
 import type { FrameworkArticleContent } from './types';
+import { attentionEconomy } from './articles/attention-economy';
 import { arcs } from './articles/arcs';
+import { cognitiveBiases } from './articles/cognitive-biases';
+import { growthMindset } from './articles/growth-mindset';
+import { nudging } from './articles/nudging';
 import { darkPatterns } from './articles/dark-patterns';
 import { experienceDesign } from './articles/experience-design';
 import { flow } from './articles/flow';
@@ -17,15 +21,19 @@ import { serviceDesign } from './articles/service-design';
 const articles: FrameworkArticleContent[] = [
 	sdt,
 	ramp,
+	growthMindset,
 	flow,
 	arcs,
 	octalysis,
 	hexad,
 	mda,
 	fogg,
+	nudging,
+	cognitiveBiases,
 	hook,
 	meaningfulGamification,
 	darkPatterns,
+	attentionEconomy,
 	hcd,
 	experienceDesign,
 	serviceDesign

@@ -4,6 +4,28 @@ export type GamificationLink = {
 	description: string;
 };
 
+export type GamificationTopicStatus = 'published' | 'soon';
+
+/** Eigene Unterseiten unter /gamification/… (nicht /frameworks/). */
+export type GamificationTopicItem = {
+	slug: string;
+	href: string;
+	title: string;
+	summary: string;
+	status: GamificationTopicStatus;
+};
+
+export const gamificationTopicItems: GamificationTopicItem[] = [
+	{
+		slug: 'marczewski',
+		href: '/gamification/marczewski',
+		title: 'Marczewski — Gamification Design Framework',
+		summary:
+			'Hexad-Spielertypen, Design-Schritte und kritische Einordnung — bevor Points, Badges und Leaderboards im Vordergrund stehen.',
+		status: 'soon'
+	}
+];
+
 export type GamificationSubsection = {
 	id: string;
 	title: string;
