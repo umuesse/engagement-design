@@ -13,9 +13,9 @@ export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	},
 	'sdt-needs': {
 		caption:
-			'Autonomie, Kompetenz und soziale Eingebundenheit sind Bedingungen, die intrinsische Motivation stützen — Pfeile zeigen ihre konvergierende Wirkung auf das Ziel „intrinsische Motivation“.',
+			'Die drei Grundbedürfnisse — Autonomie, Kompetenz und soziale Eingebundenheit — stützen intrinsische Motivation (Ryan & Deci).',
 		longDescription:
-			'Drei Bedürfnisfelder in einer violetten Farbfamilie oben; Pfeile führen zu einer zentralen Ellipse „Intrinsische Motivation“. Legende erklärt die unterstützende Rolle der Grundbedürfnisse.'
+			'Dreiecksanordnung der drei psychologischen Grundbedürfnisse mit Pfeilen zur zentralen Ellipse „Intrinsische Motivation“; gestricheltes Dreieck verbindet die Bedürfnisse als zusammengehöriges System.'
 	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',

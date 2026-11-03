@@ -89,19 +89,6 @@ export const sdt: FrameworkArticleContent = {
 		{
 			diagramIds: ['sdt-needs'],
 			blocks: [
-				{ type: 'h2', text: 'Die drei Grundbedürfnisse' },
-				{
-					type: 'p',
-					text: 'SDT geht davon aus, dass Menschen neugierig und integrationsfreudig sind — wenn Kontexte Autonomie, Kompetenz und soziale Eingebundenheit unterstützen.'
-				},
-				{
-					type: 'ul',
-					items: [
-						'<strong>Autonomie:</strong> Handeln aus Überzeugung — z. B. wählbare Projektthemen und transparente Kriterien.',
-						'<strong>Kompetenz:</strong> Fortschritt erleben — klares Feedback und steigende, passende Herausforderung.',
-						'<strong>Eingebundenheit:</strong> Verbundenheit — Peer-Feedback, gemeinsame Reflexion, respektvolle Community.'
-					]
-				},
 				{
 					type: 'callout',
 					title: 'Merksatz für Gestaltung',
