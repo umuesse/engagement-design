@@ -48,11 +48,19 @@ export const sdt: FrameworkArticleContent = {
 				{ type: 'h2', text: 'Korrumpierungseffekt' },
 				{
 					type: 'p',
-					text: 'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) beschreibt, wie sichtbare, erwartete externe Belohnungen langfristig freiwilliges Interesse an einer Tätigkeit schwächen können — typisch bei kontrollierender externer Regulierung, nicht bei jeder Form extrinsischer Motivation.'
+					text: 'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) beschreibt, dass freiwilliges Interesse nach erwarteten, sichtbaren Belohnungen schwächer sein kann als ohne sie — kein Pauschalurteil gegen Gamification, sondern ein Risiko bei erwarteter, an Teilnahme oder Abschluss gekoppelter Belohnung auf ohnehin interessanten Aufgaben.'
 				},
 				{
 					type: 'p',
-					text: 'Klassische Evidenz (Overjustification-Hypothese): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a>, <em>Journal of Personality and Social Psychology</em> — erwartete Belohnungen senkten das spätere freiwillige Weitermachen an der Aktivität.'
+					text: 'Meta-Analysen zeigen Untergrabung vor allem bei erwarteten, materiellen Belohnungen dieser Art; positives Feedback und unerwartete Belohnungen untergraben in Experimenten typischerweise nicht (Deci et al., 1999; aktualisiert u. a. Lehtivuori, 2023).'
+				},
+				{
+					type: 'p',
+					text: 'Ankerstudie (Overjustification): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a>, <em>Journal of Personality and Social Psychology</em> — erwartete Auszeichnung senkte das spätere freiwillige Weitermachen.'
+				},
+				{
+					type: 'p',
+					text: '<a href="https://selfdeterminationtheory.org/SDT/documents/1999_DeciKoestnerRyan_Metal.pdf" rel="noopener noreferrer" target="_blank">Meta-Analyse (Deci et al., 1999)</a> — Synthese über Experimente zu extrinsischen Belohnungen und intrinsischer Motivation (SDT/CET).'
 				},
 				{
 					type: 'callout',
