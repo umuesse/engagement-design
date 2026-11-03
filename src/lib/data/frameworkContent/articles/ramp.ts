@@ -11,7 +11,7 @@ export const ramp: FrameworkArticleContent = {
 	keyTerms: [
 		{
 			term: 'Gabelstapler- vs. Kerzen-Problem',
-			definition: 'Metapher: Bei mechanischen, klar regelbasierten Aufgaben können Anreize helfen; bei kognitiv-kreativen Aufgaben oft eher hemmen (Duncker-Kerzenaufgabe).'
+			definition: 'Metapher: Mechanische Aufgaben vs. insight-Kerzenaufgabe — versprochene Belohnung verschlechterte dort die Lösungsleistung (Glucksberg, 1962).'
 		},
 		{
 			term: 'Motivation 1.0 / 2.0 / 3.0',
@@ -63,6 +63,11 @@ export const ramp: FrameworkArticleContent = {
 			id: 'duncker-1945',
 			apa: 'Duncker, K. (1945). On problem-solving. <em>Psychological Monographs</em>, <em>58</em>(5), Whole No. 270.',
 			accessLabel: 'Klassische Kerzenaufgabe (Literatur)'
+		},
+		{
+			id: 'glucksberg-1962',
+			apa: 'Glucksberg, S. (1962). The influence of strength of drive on functional fixedness and perceptual recognition. <em>Journal of Experimental Psychology</em>, <em>63</em>(1), 36–41. https://doi.org/10.1037/h0044683',
+			accessLabel: 'DOI'
 		}
 	],
 	blocks: [],
@@ -76,7 +81,11 @@ export const ramp: FrameworkArticleContent = {
 				},
 				{
 					type: 'p',
-					text: 'Das Kerzen-Experiment (Dunckers Kerzenaufgabe; vgl. <a href="#ref-duncker-1945">Duncker, 1945</a>) illustriert den zweiten Fall: Eine sichtbare Geldbelohnung kann die Lösungsrate senken, weil Aufmerksamkeit auf die Belohnung statt auf die kreative Umstrukturierung geht. Für Engagement Design heißt das: Anreizdesign zuerst nach <strong>Aufgabentyp</strong> sortieren — nicht pauschal „mehr Belohnung“.'
+					text: 'Die <strong>Kerzenaufgabe</strong> (Duncker: Kerze, Streichholzschachtel, Reißzwecken an die Wand hängen; <a href="#ref-duncker-1945">Duncker, 1945</a>) ist ein klassisches <em>Insight</em>-Problem: Die Lösung erfordert, die Schachtel als Halterung umzudenken — nicht nur Ausführen bekannter Schritte. In Glucksbergs Experiment (<a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) lösten Teilnehmende mit versprochener Geldbelohnung für schnelle Lösung die Aufgabe <strong>deutlich seltener</strong> als ohne diesen extrinsischen Anreiz; die Belohnungsgruppe brauchte zudem oft <strong>länger</strong>, wenn sie fand.'
+				},
+				{
+					type: 'p',
+					text: 'Das ist das empirische Ergebnis, das Pink für kognitiv-kreative Arbeit zitiert: Extrinsische Anreize können hier die <strong>Leistung senken</strong>, nicht steigern — vermutlich, weil Aufmerksamkeit auf die Belohnung statt auf flexible Umstrukturierung geht. Das ist ein Leistungsbefund (anders als SDT-Korrumpierung, die inneres Interesse meint). Für Engagement Design: Anreize zuerst nach <strong>Aufgabentyp</strong> sortieren — nicht pauschal „mehr Belohnung“.'
 				},
 				{
 					type: 'callout',
@@ -146,7 +155,7 @@ export const ramp: FrameworkArticleContent = {
 					type: 'ul',
 					items: [
 						'<strong>Korrumpierung:</strong> Belohnungen können inneres Interesse verdrängen — das Handeln dient der Auszeichnung, nicht mehr der Aufgabe.',
-						'<strong>Leistungsabfall:</strong> Bei kreativen Aufgaben sinkt Qualität oder Innovation (Kerzenproblem, siehe oben).',
+						'<strong>Leistungsabfall:</strong> Bei insight-/kreativen Aufgaben können versprochene Belohnungen weniger und langsamere Lösungen bedeuten (Kerzenaufgabe: <a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) — unabhängig vom SDT-Korrumpierungseffekt.',
 						'<strong>Ethische Verengung:</strong> Kurzfristige Kennzahlen und starke Anreize können zu Ausweichen, Schönrechnen oder moralischem Blindflug beitragen — Verantwortung braucht klare Guardrails.',
 						'<strong>Sucht nach dem nächsten Carrot:</strong> Wenn nur der externe Anreis wechselt, fehlt nachhaltige Motivation — es entsteht ein Teufelskreis aus „Was bekomme ich dafür?“'
 					]
