@@ -1,4 +1,6 @@
 <script lang="ts">
+	import type { FrameworkReference, FrameworkSource } from '#lib/data/frameworkContent/types';
+	import FrameworkReferenceList from './FrameworkReferenceList.svelte';
 	import type { Snippet } from 'svelte';
 
 	export type KeyTerm = {
@@ -6,11 +8,7 @@
 		definition: string;
 	};
 
-	export type Source = {
-		label: string;
-		note?: string;
-		href?: string;
-	};
+	export type Source = FrameworkSource;
 
 	interface Props {
 		tag: string;
@@ -18,6 +16,7 @@
 		lead: string;
 		keyTerms?: KeyTerm[];
 		sources?: Source[];
+		references?: FrameworkReference[];
 		backHref?: string;
 		backLabel?: string;
 		articleBody: Snippet;
@@ -30,6 +29,7 @@
 		lead,
 		keyTerms = [],
 		sources = [],
+		references = [],
 		backHref = '/frameworks',
 		backLabel = 'Zurück zum Framework-Hub',
 		articleBody,
@@ -58,7 +58,9 @@
 		<div class="article-main">
 			{@render articleBody()}
 
-			{#if sources.length > 0}
+			<FrameworkReferenceList {references} />
+
+			{#if references.length === 0 && sources.length > 0}
 				<section class="sources glass-panel" aria-labelledby="sources-title">
 					<h2 id="sources-title">Quellen &amp; Pflichtlektüre</h2>
 					<ul>

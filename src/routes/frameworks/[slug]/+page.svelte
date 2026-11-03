@@ -18,7 +18,8 @@
 	title={article.title}
 	lead={article.lead}
 	keyTerms={article.keyTerms}
-	sources={article.sources}
+	sources={article.sources ?? []}
+	references={article.references ?? []}
 >
 	{#snippet articleBody()}
 		{#if article.sections?.length}

@@ -16,14 +16,37 @@ export const sdt: FrameworkArticleContent = {
 		{ term: 'Extrinsische Motivation', definition: 'Handeln wegen äußerer Anreize — kann unterstützen oder inneres Interesse verdrängen, je nach Regulierungstyp.' },
 		{ term: 'Internalisierung', definition: 'Prozess, in dem äußere Vorgaben als eigene Werte oder Ziele übernommen werden (identifiziert → integriert).' }
 	],
-	sources: [
+	references: [
 		{
-			label:
-				'Ryan, R. M., & Deci, E. L. (2000). Self-Determination Theory and the Facilitation of Intrinsic Motivation, Social Development, and Well-Being',
-			note: 'Pflichtlektüre',
-			href: 'https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf'
+			id: 'deci-1999',
+			apa: 'Deci, E. L., Koestner, R., & Ryan, R. M. (1999). A meta-analytic review of experiments examining the effects of extrinsic rewards on intrinsic motivation. <em>Psychological Bulletin</em>, <em>125</em>(6), 627–668. https://doi.org/10.1037/0033-2909.125.6.627',
+			href: 'https://selfdeterminationtheory.org/SDT/documents/1999_DeciKoestnerRyan_Metal.pdf',
+			accessLabel: 'PDF (selfdeterminationtheory.org)'
 		},
-		{ label: 'selfdeterminationtheory.org', note: 'Ressourcen & Überblick', href: 'https://selfdeterminationtheory.org' }
+		{
+			id: 'lehtivuori-2023',
+			apa: 'Lehtivuori, A. (2023). <em>When do extrinsic rewards undermine intrinsic motivation? A meta-analysis</em> [Doctoral dissertation, University of Turku]. https://doi.org/10.33352/978-951-29-9132-7',
+			href: 'https://www.utupub.fi/bitstream/handle/10024/173853/Annales%20E%2099%20Lehtivuori%20DISS.pdf',
+			accessLabel: 'Dissertation (PDF)'
+		},
+		{
+			id: 'lepper-1973',
+			apa: 'Lepper, M. R., Greene, D., & Nisbett, R. E. (1973). Undermining children\'s intrinsic interest with extrinsic reward: A test of the "overjustification" hypothesis. <em>Journal of Personality and Social Psychology</em>, <em>28</em>(1), 129–137. https://doi.org/10.1037/h0031733',
+			href: 'https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf',
+			accessLabel: 'PDF (Open-Access-Kopie)'
+		},
+		{
+			id: 'ryan-deci-2000',
+			apa: 'Ryan, R. M., & Deci, E. L. (2000). Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being. <em>American Psychologist</em>, <em>55</em>(1), 68–78. https://doi.org/10.1037/0003-066X.55.1.68',
+			href: 'https://selfdeterminationtheory.org/SDT/documents/2000_RyanDeci_SDT.pdf',
+			accessLabel: 'PDF (Pflichtlektüre)'
+		},
+		{
+			id: 'sdt-website',
+			apa: 'Center for Self-Determination Theory. (n.d.). <em>Self-determination theory</em>. https://selfdeterminationtheory.org',
+			href: 'https://selfdeterminationtheory.org',
+			accessLabel: 'Website öffnen'
+		}
 	],
 	blocks: [],
 	sections: [
@@ -52,15 +75,7 @@ export const sdt: FrameworkArticleContent = {
 				},
 				{
 					type: 'p',
-					text: 'Meta-Analysen zeigen Untergrabung vor allem bei erwarteten, materiellen Belohnungen dieser Art; positives Feedback und unerwartete Belohnungen untergraben in Experimenten typischerweise nicht (Deci et al., 1999; aktualisiert u. a. Lehtivuori, 2023).'
-				},
-				{
-					type: 'p',
-					text: 'Ankerstudie (Overjustification): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a>, <em>Journal of Personality and Social Psychology</em> — erwartete Auszeichnung senkte das spätere freiwillige Weitermachen.'
-				},
-				{
-					type: 'p',
-					text: '<a href="https://selfdeterminationtheory.org/SDT/documents/1999_DeciKoestnerRyan_Metal.pdf" rel="noopener noreferrer" target="_blank">Meta-Analyse (Deci et al., 1999)</a> — Synthese über Experimente zu extrinsischen Belohnungen und intrinsischer Motivation (SDT/CET).'
+					text: 'Meta-Analysen zeigen Untergrabung vor allem bei erwarteten, materiellen Belohnungen dieser Art; positives Feedback und unerwartete Belohnungen untergraben in Experimenten typischerweise nicht (<a href="#ref-deci-1999">Deci et al., 1999</a>; <a href="#ref-lehtivuori-2023">Lehtivuori, 2023</a>). Die klassische Overjustification-Studie (<a href="#ref-lepper-1973">Lepper et al., 1973</a>) fand: Erwartete Auszeichnung senkte das spätere freiwillige Weitermachen.'
 				},
 				{
 					type: 'callout',
