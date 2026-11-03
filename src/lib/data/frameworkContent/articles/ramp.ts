@@ -62,7 +62,7 @@ export const ramp: FrameworkArticleContent = {
 				},
 				{
 					type: 'p',
-					text: 'Drei RAMP-Elemente lassen sich direkt auf SDT mappen: <strong>Autonomy</strong> entspricht <em>Autonomie</em>, <strong>Relatedness</strong> der <em>sozialen Eingebundenheit</em>, <strong>Mastery</strong> der SDT-<em>Kompetenz</em> (Meisterschaft durch wirksames Lernen und passende Herausforderung). Neu im Vordergrund steht <strong>Purpose</strong>: Menschen bleiben eher engagiert, wenn sie verstehen, wozu ihre Arbeit beiträgt — nicht nur <em>wie</em> sie belohnt werden. Das ist keine Gamification-Mechanik, sondern eine Haltung bei der Gestaltung von Kontext und Bedeutung.'
+					text: 'Drei RAMP-Elemente lassen sich direkt auf SDT mappen: <strong>Autonomy</strong> entspricht <em>Autonomie</em>, <strong>Relatedness</strong> der <em>sozialen Eingebundenheit</em>, <strong>Mastery</strong> der SDT-<em>Kompetenz</em> (Meisterschaft durch wirksames Lernen und passende Herausforderung). Neu im Vordergrund steht <strong>Purpose</strong>: Menschen bleiben eher engagiert, wenn sie verstehen, wozu ihre Arbeit beiträgt — nicht nur <em>wie</em> sie belohnt werden. Das meint eine Haltung bei der Gestaltung von Kontext und Bedeutung, nicht kurzfristige Anreiz-Tricks.'
 				},
 				{
 					type: 'p',
@@ -80,7 +80,7 @@ export const ramp: FrameworkArticleContent = {
 				{ type: 'h2', text: 'Relevanz für Engagement Design' },
 				{
 					type: 'p',
-					text: 'RAMP eignet sich als schneller Kompass neben SDT: Wo fehlt Sinn (Purpose) trotz gamifizierter Oberfläche? Wo wird Autonomie durch erzwungene Pfade untergraben? Kombiniert beide Modelle — Regulationstypen und Grundbedürfnisse aus SDT, plus explizite Sinnfrage aus Pink — für Touchpoints, die freiwillig getragen werden.'
+					text: 'RAMP eignet sich als schneller Kompass neben SDT: Wo fehlt Sinn (Purpose) trotz vieler sichtbarer Anreize? Wo wird Autonomie durch erzwungene Pfade untergraben? Kombiniert beide Modelle — Regulationstypen und Grundbedürfnisse aus SDT, plus explizite Sinnfrage aus Pink — für Touchpoints, die freiwillig getragen werden.'
 				}
 			]
 		}
