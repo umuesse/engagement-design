@@ -7,10 +7,9 @@ export type DiagramMeta = {
 
 export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	'sdt-spectrum': {
-		caption:
-			'Kontinuum der Selbstbestimmung (Ryan & Deci): sechs Stufen von Amotivation über vier extrinsische Regulierungstypen (gruppiert) bis intrinsische Motivation — mit Kurztext pro Stufe; auf schmalen Screens als vertikale Abfolge.',
+		caption: 'Kontinuum der Selbstbestimmung nach Ryan & Deci (2000) — von Amotivation bis intrinsischer Motivation.',
 		longDescription:
-			'Horizontales Säulenlayout mit mehrzeiligen Regulierungsnamen und zweizeiligen Kurzdeskriptoren auf hellem Hintergrund; Klammer „Extrinsische Motivation“ über vier mittlere Stufen; Achse nicht selbstbestimmt nach selbstbestimmt; Internalisierungspfeil unten. Unter 640px Breite vertikale Variante ohne überlappende Spalten.'
+			'Horizontales Säulenlayout: sechs Stufen (Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung, intrinsische Motivation) mit Kurztext pro Stufe; Klammer „Extrinsische Motivation“ über vier mittlere Stufen; Achse von nicht selbstbestimmt nach selbstbestimmt; Pfeil für steigende Autonomie und Internalisierung.'
 	},
 	'sdt-needs': {
 		caption:

@@ -25,53 +25,64 @@ export const sdt: FrameworkArticleContent = {
 		},
 		{ label: 'selfdeterminationtheory.org', note: 'Ressourcen & Überblick', href: 'https://selfdeterminationtheory.org' }
 	],
-	blocks: [
-		{ type: 'h2', text: 'Die drei Grundbedürfnisse' },
+	blocks: [],
+	sections: [
 		{
-			type: 'p',
-			text: 'SDT geht davon aus, dass Menschen neugierig und integrationsfreudig sind — wenn Kontexte Autonomie, Kompetenz und soziale Eingebundenheit unterstützen.'
-		},
-		{
-			type: 'ul',
-			items: [
-				'<strong>Autonomie:</strong> Handeln aus Überzeugung — z. B. wählbare Projektthemen und transparente Kriterien.',
-				'<strong>Kompetenz:</strong> Fortschritt erleben — klares Feedback und steigende, passende Herausforderung.',
-				'<strong>Eingebundenheit:</strong> Verbundenheit — Peer-Feedback, gemeinsame Reflexion, respektvolle Community.'
+			diagramIds: ['sdt-spectrum'],
+			blocks: [
+				{ type: 'h2', text: 'Intrinsisch vs. extrinsisch' },
+				{
+					type: 'p',
+					text: 'Intrinsische Motivation kommt aus der Tätigkeit selbst. Extrinsische Motivation reicht von reinem Druck von außen bis zu Werten, die man als die eigenen erlebt — das Kontinuum oben macht diese Abstufungen sichtbar.'
+				},
+				{
+					type: 'callout',
+					title: 'Merksatz',
+					paragraphs: [
+						'Externe Belohnungen können kurzfristig aktivieren, aber langfristig inneres Interesse untergraben — besonders wenn sie Kontrolle signalisieren.'
+					]
+				},
+				{ type: 'h2', text: 'Anreize und Regulierungstypen' },
+				{
+					type: 'ul',
+					items: [
+						'Rein externe Regulierung hängt an Belohnung oder Strafe — oft fragil, wenn der Anreiz entfällt.',
+						'Introjizierte Regulierung (Stolz, Schuld, innerer Druck) kann aktivieren, ohne echte Autonomie zu stärken.',
+						'Identifizierte und integrierte Regulierung verbinden Handeln mit persönlicher Bedeutung bzw. eigenen Werten.',
+						'Grundbedürfnisse zu untergraben (z. B. erzwungene Teilnahme) verschiebt Menschen eher Richtung Amotivation oder externer Kontrolle.'
+					]
+				},
+				{
+					type: 'callout',
+					title: 'Merksatz für Gestaltung',
+					paragraphs: [
+						'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
+					]
+				}
 			]
 		},
-		{ type: 'h2', text: 'Intrinsisch vs. extrinsisch' },
 		{
-			type: 'p',
-			text: 'Intrinsische Motivation kommt aus der Tätigkeit selbst. Extrinsische Motivation reicht von reinem Druck von außen bis zu Werten, die man als die eigenen erlebt — das Kontinuum der Regulierung macht diese Abstufungen sichtbar.'
-		},
-		{
-			type: 'callout',
-			title: 'Merksatz',
-			paragraphs: [
-				'Externe Belohnungen können kurzfristig aktivieren, aber langfristig inneres Interesse untergraben — besonders wenn sie Kontrolle signalisieren.'
+			diagramIds: ['sdt-needs'],
+			blocks: [
+				{ type: 'h2', text: 'Die drei Grundbedürfnisse' },
+				{
+					type: 'p',
+					text: 'SDT geht davon aus, dass Menschen neugierig und integrationsfreudig sind — wenn Kontexte Autonomie, Kompetenz und soziale Eingebundenheit unterstützen.'
+				},
+				{
+					type: 'ul',
+					items: [
+						'<strong>Autonomie:</strong> Handeln aus Überzeugung — z. B. wählbare Projektthemen und transparente Kriterien.',
+						'<strong>Kompetenz:</strong> Fortschritt erleben — klares Feedback und steigende, passende Herausforderung.',
+						'<strong>Eingebundenheit:</strong> Verbundenheit — Peer-Feedback, gemeinsame Reflexion, respektvolle Community.'
+					]
+				},
+				{ type: 'h2', text: 'Relevanz für Engagement Design' },
+				{
+					type: 'p',
+					text: 'SDT ist Kompass statt Mechanik-Katalog: Menschen bleiben freiwillig, wenn sie sich kompetent, verbunden und selbstbestimmt fühlen — nicht wenn man sie nur aktiviert.'
+				}
 			]
-		},
-		{ type: 'h2', text: 'Anreize und Regulierungstypen' },
-		{
-			type: 'ul',
-			items: [
-				'Rein externe Regulierung hängt an Belohnung oder Strafe — oft fragil, wenn der Anreiz entfällt.',
-				'Introjizierte Regulierung (Stolz, Schuld, innerer Druck) kann aktivieren, ohne echte Autonomie zu stärken.',
-				'Identifizierte und integrierte Regulierung verbinden Handeln mit persönlicher Bedeutung bzw. eigenen Werten.',
-				'Grundbedürfnisse zu untergraben (z. B. erzwungene Teilnahme) verschiebt Menschen eher Richtung Amotivation oder externer Kontrolle.'
-			]
-		},
-		{
-			type: 'callout',
-			title: 'Merksatz für Gestaltung',
-			paragraphs: [
-				'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
-			]
-		},
-		{ type: 'h2', text: 'Relevanz für Engagement Design' },
-		{
-			type: 'p',
-			text: 'SDT ist Kompass statt Mechanik-Katalog: Menschen bleiben freiwillig, wenn sie sich kompetent, verbunden und selbstbestimmt fühlen — nicht wenn man sie nur aktiviert.'
 		}
 	]
 };

@@ -21,7 +21,16 @@
 	sources={article.sources}
 >
 	{#snippet articleBody()}
-		<FrameworkDiagramList ids={article.diagramIds} />
-		<FrameworkContentBlocks blocks={article.blocks} />
+		{#if article.sections?.length}
+			{#each article.sections as section, index (index)}
+				{#if section.diagramIds?.length}
+					<FrameworkDiagramList ids={section.diagramIds} />
+				{/if}
+				<FrameworkContentBlocks blocks={section.blocks} />
+			{/each}
+		{:else}
+			<FrameworkDiagramList ids={article.diagramIds} />
+			<FrameworkContentBlocks blocks={article.blocks} />
+		{/if}
 	{/snippet}
 </FrameworkArticle>

@@ -36,6 +36,11 @@ export type ContentBlock =
 			paragraphs: string[];
 	  };
 
+export type FrameworkArticleSection = {
+	diagramIds?: FrameworkDiagramId[];
+	blocks: ContentBlock[];
+};
+
 export type FrameworkArticleContent = {
 	slug: string;
 	tag: string;
@@ -46,4 +51,6 @@ export type FrameworkArticleContent = {
 	keyTerms: FrameworkKeyTerm[];
 	sources: FrameworkSource[];
 	blocks: ContentBlock[];
+	/** Optional: diagram + text abschnittsweise (z. B. SDT) statt alle Diagramme am Anfang */
+	sections?: FrameworkArticleSection[];
 };

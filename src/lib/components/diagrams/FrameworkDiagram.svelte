@@ -86,9 +86,9 @@
 		height: auto;
 	}
 
-	.framework-diagram.sdt-spectrum .diagram-frame :global(svg.layout-horizontal),
-	.framework-diagram.sdt-spectrum .diagram-frame :global(.sdt-spectrum-wrap svg) {
+	.framework-diagram.sdt-spectrum .diagram-frame :global(svg) {
 		max-width: 45rem;
+		min-width: min(100%, 20rem);
 	}
 
 	.diagram-frame :global(.diagram-label) {
