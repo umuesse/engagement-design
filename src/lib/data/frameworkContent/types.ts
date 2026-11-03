@@ -41,6 +41,12 @@ export type ContentBlock =
 	| { type: 'p'; text: string }
 	| { type: 'ul'; items: string[] }
 	| {
+			type: 'table';
+			caption?: string;
+			headers: string[];
+			rows: string[][];
+	  }
+	| {
 			type: 'callout';
 			title?: string;
 			variant?: 'insight' | 'caution';
