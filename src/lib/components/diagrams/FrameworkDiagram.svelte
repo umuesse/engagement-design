@@ -57,15 +57,18 @@
 
 <style>
 	.framework-diagram {
+		display: flex;
+		flex-direction: column;
+		align-items: stretch;
+		gap: 0.75rem;
 		margin: 0 0 1.75rem;
-		padding: 1.25rem 1.25rem 1rem;
+		padding: 1.15rem 1.25rem;
 		overflow: hidden;
 		box-sizing: border-box;
 	}
 
 	.framework-diagram.sdt-spectrum {
 		overflow: visible;
-		padding: 1rem 1.15rem 0.65rem;
 	}
 
 	.diagram-frame {
@@ -73,15 +76,11 @@
 		overflow-x: auto;
 		overflow-y: visible;
 		min-height: 0;
+		flex: 0 0 auto;
 	}
 
 	.framework-diagram.sdt-spectrum .diagram-frame {
 		overflow-x: auto;
-		margin-bottom: 0;
-	}
-
-	.framework-diagram.sdt-spectrum figcaption {
-		margin-top: 0.5rem;
 	}
 
 	.diagram-frame :global(svg) {
@@ -161,7 +160,8 @@
 	}
 
 	figcaption {
-		margin-top: 0.75rem;
+		margin: 0;
+		flex: 0 0 auto;
 		font-size: 0.8125rem;
 		line-height: 1.45;
 		color: var(--color-muted);

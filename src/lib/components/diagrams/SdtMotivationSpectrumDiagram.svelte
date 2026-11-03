@@ -1,5 +1,5 @@
 <svg
-	viewBox="0 0 720 200"
+	viewBox="0 0 720 194"
 	width="100%"
 	preserveAspectRatio="xMidYMid meet"
 	xmlns="http://www.w3.org/2000/svg"
@@ -57,3 +57,4 @@
 	<line x1="32" y1="188" x2="688" y2="188" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
 	<polygon points="688,188 678,183 678,193" fill="#5b21b6" />
 </svg>
+
