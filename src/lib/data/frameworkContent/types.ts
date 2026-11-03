@@ -10,7 +10,8 @@ export type FrameworkKeyTerm = {
 };
 
 export type FrameworkDiagramId =
-	| 'sdt'
+	| 'sdt-spectrum'
+	| 'sdt-needs'
 	| 'flow'
 	| 'arcs'
 	| 'octalysis'
@@ -41,7 +42,7 @@ export type FrameworkArticleContent = {
 	title: string;
 	lead: string;
 	metaDescription: string;
-	diagramId: FrameworkDiagramId;
+	diagramIds: FrameworkDiagramId[];
 	keyTerms: FrameworkKeyTerm[];
 	sources: FrameworkSource[];
 	blocks: ContentBlock[];

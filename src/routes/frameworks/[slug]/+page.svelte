@@ -21,7 +21,9 @@
 	sources={article.sources}
 >
 	{#snippet articleBody()}
-		<FrameworkDiagram id={article.diagramId} />
+		{#each article.diagramIds as diagramId (diagramId)}
+			<FrameworkDiagram id={diagramId} />
+		{/each}
 		<FrameworkContentBlocks blocks={article.blocks} />
 	{/snippet}
 </FrameworkArticle>

@@ -6,7 +6,7 @@ export const serviceDesign: FrameworkArticleContent = {
 	title: 'Service Design Thinking',
 	lead: 'Engagement-Systeme sind selten nur eine App — Service Design verbindet Touchpoints, Backstage und Journey zu einem kohärenten Erlebnis.',
 	metaDescription: 'Service Design: Customer Journey, Touchpoints, Service Blueprint — engagement über Kanäle hinweg.',
-	diagramId: 'service-design',
+	diagramIds: ['service-design'],
 	keyTerms: [
 		{ term: 'Customer Journey', definition: 'Phasen, die Nutzer durchlaufen — von Awareness bis Nachbetreuung.' },
 		{ term: 'Touchpoint', definition: 'Jeder Kontaktpunkt zwischen Mensch und Service (digital/physisch/human).' },

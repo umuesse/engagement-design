@@ -6,7 +6,7 @@ export const hook: FrameworkArticleContent = {
 	title: 'Hook Model',
 	lead: 'Nir Eyals Hook Model (Trigger → Action → Variable Reward → Investment) erklärt gewohnheitsbildende Produkte — im Modul liest du es bewusst kritisch: Wo endet Engagement, wo beginnt Sucht?',
 	metaDescription: 'Hook Model: Trigger, Action, Variable Reward, Investment — Grenze zu Manipulation.',
-	diagramId: 'hook',
+	diagramIds: ['hook'],
 	keyTerms: [
 		{ term: 'Trigger', definition: 'Extern (Notification) oder intern (Gefühl, Routine), das Handeln auslöst.' },
 		{ term: 'Action', definition: 'Minimale Handlung mit geringer Hürde — oft im Fogg-Sinne Ability.' },

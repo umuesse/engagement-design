@@ -6,7 +6,7 @@ export const darkPatterns: FrameworkArticleContent = {
 	title: 'Ethics & Dark Patterns',
 	lead: 'Dark Patterns nutzen UX-Wissen gegen Nutzerinteressen — Engagement Design definiert sich auch darüber, welche „ erfolgreichen“ Mechaniken du bewusst nicht einsetzt.',
 	metaDescription: 'Dark Patterns, manipulative Engagement-Mechaniken und ethische Verantwortung in ED-Projekten.',
-	diagramId: 'dark-patterns',
+	diagramIds: ['dark-patterns'],
 	keyTerms: [
 		{ term: 'Dark Pattern', definition: 'Interface- oder Systemdesign, das Nutzer zu ungewollten Handlungen drängt.' },
 		{ term: 'Variable Reward Schedule', definition: 'Unvorhersehbare Belohnung — suchterzeugend (vgl. Hook Model).' },

@@ -6,7 +6,7 @@ export const experienceDesign: FrameworkArticleContent = {
 	title: 'Experience Design',
 	lead: 'Experience Design fragt: Was macht eine Erfahrung bedeutsam und erinnerbar — über den ganzen Bogen von Anfang, Mitte und Ende?',
 	metaDescription: 'Experience Design: Peak-End-Rule, narrative Bögen, Bedeutung statt Gamification-Oberfläche.',
-	diagramId: 'experience-design',
+	diagramIds: ['experience-design'],
 	keyTerms: [
 		{ term: 'Peak-End-Rule', definition: 'Erinnerung wird von Höhepunkt und Ende geprägt — nicht vom Durchschnitt.' },
 		{ term: 'Experience Arc', definition: 'Spannungs- und Bedeutungsverlauf über die Zeit — wie in Storytelling.' },

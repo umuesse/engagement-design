@@ -6,10 +6,17 @@ export type DiagramMeta = {
 };
 
 export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
-	sdt: {
-		caption: 'SDT: Die drei Grundbedürfnisse und das Spektrum intrinsisch ↔ extrinsisch.',
+	'sdt-spectrum': {
+		caption:
+			'Kontinuum intrinsisch ↔ extrinsisch: klassische PBL- und Gamification-Mechaniken liegen oft extrinsisch; Engagement Design zielt auf eine Verschiebung Richtung intrinsischer Motivation.',
 		longDescription:
-			'Diagramm mit drei verbundenen Bedürfnissen Autonomie, Kompetenz und sozialer Eingebundenheit sowie einer Skala von intrinsischer zu extrinsischer Motivation.'
+			'Horizontale Skala von links intrinsisch (Interesse, Bedeutung) nach rechts extrinsisch (Belohnungen, Druck). Marker für Engagement Design links, für PBL und Gamification rechts; gestrichelter Pfeil symbolisiert die angestrebte Verschiebung.'
+	},
+	'sdt-needs': {
+		caption:
+			'Autonomie, Kompetenz und soziale Eingebundenheit sind Bedingungen, die intrinsische Motivation stützen — Pfeile zeigen ihre konvergierende Wirkung auf das Ziel „intrinsische Motivation“.',
+		longDescription:
+			'Drei Bedürfnisfelder in einer violetten Farbfamilie oben; Pfeile führen zu einer zentralen Ellipse „Intrinsische Motivation“. Legende erklärt die unterstützende Rolle der Grundbedürfnisse.'
 	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',

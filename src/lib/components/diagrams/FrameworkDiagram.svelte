@@ -12,7 +12,8 @@
 	import MdaDiagram from './MdaDiagram.svelte';
 	import OctalysisDiagram from './OctalysisDiagram.svelte';
 	import RecipeDiagram from './RecipeDiagram.svelte';
-	import SdtDiagram from './SdtDiagram.svelte';
+	import SdtBasicNeedsDiagram from './SdtBasicNeedsDiagram.svelte';
+	import SdtMotivationSpectrumDiagram from './SdtMotivationSpectrumDiagram.svelte';
 	import ServiceDesignDiagram from './ServiceDesignDiagram.svelte';
 	import type { Component } from 'svelte';
 
@@ -23,7 +24,8 @@
 	let { id }: Props = $props();
 
 	const components: Record<FrameworkDiagramId, Component> = {
-		sdt: SdtDiagram,
+		'sdt-spectrum': SdtMotivationSpectrumDiagram,
+		'sdt-needs': SdtBasicNeedsDiagram,
 		flow: FlowDiagram,
 		arcs: ArcsDiagram,
 		octalysis: OctalysisDiagram,
@@ -47,8 +49,10 @@
 	<div class="diagram-frame" role="img" aria-labelledby={captionId}>
 		<Diagram />
 	</div>
-	<figcaption id={captionId}>{meta.caption}</figcaption>
-	<p class="sr-only">{meta.longDescription}</p>
+	<figcaption id={captionId}>
+		{meta.caption}
+		<span class="sr-only">{meta.longDescription}</span>
+	</figcaption>
 </figure>
 
 <style>

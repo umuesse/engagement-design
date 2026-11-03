@@ -6,7 +6,7 @@ export const hcd: FrameworkArticleContent = {
 	title: 'Human-Centered Design',
 	lead: 'HCD verankert Engagement in echten Menschen, Kontexten und iterativen Prototypen — für euch oft die Brücke vom UX-Studium zum Modul ED.',
 	metaDescription: 'Human-Centered Design: Empathie, Iteration, Prototypen — Engagement Design als HCD-Spezialisierung.',
-	diagramId: 'hcd',
+	diagramIds: ['hcd'],
 	keyTerms: [
 		{ term: 'Empathie', definition: 'Bedürfnisse, Kontext und Constraints der Zielgruppe verstehen — nicht raten.' },
 		{ term: 'Ideation', definition: 'Viele Lösungswege explorieren, bevor man Mechaniken festzurrt.' },

@@ -4,10 +4,10 @@ export const sdt: FrameworkArticleContent = {
 	slug: 'sdt',
 	tag: 'Motivationspsychologie',
 	title: 'Self-Determination Theory (SDT)',
-	lead: 'Deci & Ryan liefern das psychologische Fundament für Engagement Design: Nachhaltige Motivation entsteht, wenn Grundbedürfnisse erfüllt werden — nicht wenn man nur Belohnungen drauflegt.',
+	lead: 'Deci & Ryan liefern das psychologische Fundament für Engagement Design: Zuerst das Spektrum intrinsisch ↔ extrinsisch — dann die drei Grundbedürfnisse als Bedingungen, die innere Motivation stützen, statt nur Belohnungen draufzulegen.',
 	metaDescription:
 		'SDT für Studierende: Autonomie, Kompetenz, Eingebundenheit, intrinsische vs. extrinsische Motivation und Relevanz für Engagement Design.',
-	diagramId: 'sdt',
+	diagramIds: ['sdt-spectrum', 'sdt-needs'],
 	keyTerms: [
 		{ term: 'Autonomie', definition: 'Erleben von Wahlfreiheit und Selbstbestimmung — volle Zustimmung zu Handlungen.' },
 		{ term: 'Kompetenz', definition: 'Gefühl, Herausforderungen zu bewältigen und zu wachsen — Feedback und passende Schwierigkeit.' },
