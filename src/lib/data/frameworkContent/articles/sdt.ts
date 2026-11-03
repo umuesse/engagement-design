@@ -83,13 +83,6 @@ export const sdt: FrameworkArticleContent = {
 					paragraphs: [
 						'Externe Belohnungen können kurzfristig aktivieren — untergraben bei kontrollierender Erwartung aber langfristig intrinsisches Interesse.'
 					]
-				},
-				{
-					type: 'callout',
-					title: 'Merksatz für Gestaltung',
-					paragraphs: [
-						'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
-					]
 				}
 			]
 		},
@@ -107,6 +100,13 @@ export const sdt: FrameworkArticleContent = {
 						'<strong>Autonomie:</strong> Handeln aus Überzeugung — z. B. wählbare Projektthemen und transparente Kriterien.',
 						'<strong>Kompetenz:</strong> Fortschritt erleben — klares Feedback und steigende, passende Herausforderung.',
 						'<strong>Eingebundenheit:</strong> Verbundenheit — Peer-Feedback, gemeinsame Reflexion, respektvolle Community.'
+					]
+				},
+				{
+					type: 'callout',
+					title: 'Merksatz für Gestaltung',
+					paragraphs: [
+						'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
 					]
 				},
 				{ type: 'h2', text: 'Relevanz für Engagement Design' },
