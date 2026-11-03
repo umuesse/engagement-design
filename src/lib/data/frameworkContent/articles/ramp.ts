@@ -81,7 +81,11 @@ export const ramp: FrameworkArticleContent = {
 				},
 				{
 					type: 'p',
-					text: 'Die <strong>Kerzenaufgabe</strong> (Duncker: Kerze, Streichholzschachtel, Reißzwecken an die Wand hängen; <a href="#ref-duncker-1945">Duncker, 1945</a>) ist ein klassisches <em>Insight</em>-Problem: Die Lösung erfordert, die Schachtel als Halterung umzudenken — nicht nur Ausführen bekannter Schritte. In Glucksbergs Experiment (<a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) lösten Teilnehmende mit versprochener Geldbelohnung für schnelle Lösung die Aufgabe <strong>deutlich seltener</strong> als ohne diesen extrinsischen Anreiz; die Belohnungsgruppe brauchte zudem oft <strong>länger</strong>, wenn sie fand.'
+					text: 'Ein Standardbeispiel ist Dunckers <strong>Kerzenaufgabe</strong> (<a href="#ref-duncker-1945">Duncker, 1945</a>): Proband:innen sollen eine <strong>brennende Kerze</strong> so an einer <strong>senkrecht hängenden Korkplatte</strong> befestigen, dass <strong>kein Wachs auf den Boden tropft</strong>. Zur Verfügung stehen die Kerze, eine <strong>Schachtel Streichhölzer</strong> und eine <strong>Schachtel Reißnägel</strong> (die Nägel befinden sich in der Schachtel). Es geht um ein kognitives <em>Insight</em>-Problem — nicht um mechanisches Abspulen fester Schritte.'
+				},
+				{
+					type: 'p',
+					text: 'Glucksberg testete diese Aufgabe mit vs. ohne versprochene Geldbelohnung (<a href="#ref-glucksberg-1962">Glucksberg, 1962</a>): Die <strong>Belohnungsgruppe</strong> fand die Insight-Lösung <strong>seltener</strong> und war im Mittel <strong>langsamer</strong> als die Gruppe ohne extrinsischen Anreiz.'
 				},
 				{
 					type: 'p',
@@ -155,7 +159,7 @@ export const ramp: FrameworkArticleContent = {
 					type: 'ul',
 					items: [
 						'<strong>Korrumpierung:</strong> Belohnungen können inneres Interesse verdrängen — das Handeln dient der Auszeichnung, nicht mehr der Aufgabe.',
-						'<strong>Leistungsabfall:</strong> Bei insight-/kreativen Aufgaben können versprochene Belohnungen weniger und langsamere Lösungen bedeuten (Kerzenaufgabe: <a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) — unabhängig vom SDT-Korrumpierungseffekt.',
+						'<strong>Leistungsabfall:</strong> Bei insight-/kreativen Aufgaben (z. B. Kerzenaufgabe, siehe oben) können versprochene Belohnungen seltener und langsamere Lösungen bedeuten (<a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) — unabhängig vom SDT-Korrumpierungseffekt.',
 						'<strong>Ethische Verengung:</strong> Kurzfristige Kennzahlen und starke Anreize können zu Ausweichen, Schönrechnen oder moralischem Blindflug beitragen — Verantwortung braucht klare Guardrails.',
 						'<strong>Sucht nach dem nächsten Carrot:</strong> Wenn nur der externe Anreis wechselt, fehlt nachhaltige Motivation — es entsteht ein Teufelskreis aus „Was bekomme ich dafür?“'
 					]
