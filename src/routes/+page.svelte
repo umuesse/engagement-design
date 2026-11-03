@@ -73,6 +73,7 @@
 <section class="glass-panel links" aria-labelledby="explore-title">
 	<h2 id="explore-title">Weiter erkunden</h2>
 	<ul class="link-list">
+		<li><a href="/gamification">Gamification — GAM → ED &amp; Grenzen von PBL</a></li>
 		<li><a href="/frameworks">Frameworks &amp; theoretische Basis</a></li>
 		<li><a href="/anwendungsfelder">Anwendungsfelder für dein Projekt</a></li>
 		<li><a href="/modul/projektphase">Projektphase — Ablauf &amp; Deliverables</a></li>

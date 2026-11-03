@@ -8,6 +8,7 @@ export const primaryNav: NavItem[] = [
 	{ href: '/', label: 'Start' },
 	{ href: '/modul/inputphase', label: 'Inputphase' },
 	{ href: '/modul/projektphase', label: 'Projektphase' },
+	{ href: '/gamification', label: 'Gamification' },
 	{ href: '/frameworks', label: 'Frameworks' },
 	{ href: '/anwendungsfelder', label: 'Anwendungsfelder' }
 ];
