@@ -6,18 +6,13 @@ export const ramp: FrameworkArticleContent = {
   title: "RAMP (Drive)",
   lead: "Daniel Pink erweitert in Drive die Motivationsdebatte für Wissenarbeit: Wann helfen externe Anreize — und wann schaden sie? RAMP (Relatedness, Autonomy, Mastery, Purpose) baut auf der Self-Determination Theory auf und macht Sinn als vierte Gestaltungsdimension explizit.",
   metaDescription:
-    "Pink Drive und RAMP für Studierende: Gabelstapler-Metapher, Motivation 1–3, Purpose neben SDT, Risiken extrinsischer Belohnungen, Praxis-Toolkits, Vergleich SDT vs. Drive.",
+    "Pink Drive und RAMP für Studierende: Gabelstapler-Metapher, Purpose neben SDT, Risiken extrinsischer Belohnungen, Praxis-Toolkits, Vergleich SDT vs. Drive.",
   diagramIds: ["ramp"],
   keyTerms: [
     {
       term: "Gabelstapler- vs. Kerzen-Problem",
       definition:
         "Metapher: Mechanische Aufgaben vs. insight-Kerzenaufgabe — versprochene Belohnung verschlechterte dort die Lösungsleistung (Glucksberg, 1962).",
-    },
-    {
-      term: "Motivation 1.0 / 2.0 / 3.0",
-      definition:
-        "Pinks Stufen: Überleben (historisch), Carrot-and-Stick für Routinearbeit, intrinsische Treiber (Autonomie, Meisterschaft, Sinn) für komplexe Aufgaben.",
     },
     {
       term: "Relatedness (Verbundenheit)",
@@ -87,7 +82,7 @@ export const ramp: FrameworkArticleContent = {
         },
         {
           type: "p",
-          text: 'Ein Standardbeispiel ist Dunckers <strong>Kerzenaufgabe</strong> (<a href="#ref-duncker-1945">Duncker, 1945</a>): Proband:innen sollen eine <strong>brennende Kerze</strong> so an einer <strong>senkrecht hängenden Korkplatte</strong> befestigen, dass <strong>kein Wachs auf den Boden tropft</strong>. Zur Verfügung stehen die Kerze, eine <strong>Schachtel Streichhölzer</strong> und eine <strong>Schachtel Reißnägel</strong> (die Nägel stecken in der Schachtel). Es geht um ein kognitives <em>Insight</em>-Problem — nicht um mechanisches Abspulen fester Schritte.',
+          text: 'Ein Standardbeispiel ist Dunckers <strong>Kerzenaufgabe</strong> (<a href="#ref-duncker-1945">Duncker, 1945</a>): Proband:innen sollen eine <strong>brennende Kerze</strong> so an einer <strong>senkrecht hängenden Korkplatte</strong> befestigen, dass <strong>kein Wachs auf den Boden tropft</strong>. Zur Verfügung stehen die Kerze, eine <strong>Schachtel Streichhölzer</strong> und eine <strong>Schachtel Reißnägel</strong>. Es geht um ein kognitives <em>Insight</em>-Problem — nicht um mechanisches Abspulen fester Schritte.',
         },
         {
           type: "p",
@@ -111,27 +106,6 @@ export const ramp: FrameworkArticleContent = {
           paragraphs: [
             "Routine und klare Algorithmen: extrinsische Ziele können stabilisieren. Komplexität und Kreativität: eher Autonomie, Meisterschaft und Sinn statt Carrot-and-Stick.",
           ],
-        },
-      ],
-    },
-    {
-      blocks: [
-        { type: "h2", text: "Motivationstypen 1 → 2 → 3" },
-        {
-          type: "p",
-          text: 'Pink skizziert drei „Betriebssysteme“ der Motivation — historisch und heute gemischt (<a href="#ref-pink-2009">Pink, 2009</a>):',
-        },
-        {
-          type: "ul",
-          items: [
-            "<strong>Motivation 1.0:</strong> Überleben und Grundbedürfnisse — für modernes Wissenarbeiten selten der Engpass, historisch eher Handwerks- und Überlebenskontexte.",
-            "<strong>Motivation 2.0:</strong> Carrot-and-Stick — Belohnung und Strafe für vorhersagbare, mechanische Leistung; passt zu Typ-2-Aufgaben, reicht für komplexe Arbeit oft nicht.",
-            "<strong>Motivation 3.0:</strong> Intrinsische Treiber — <em>Autonomie</em>, <em>Meisterschaft</em> (Mastery) und <em>Sinn</em> (Purpose); für kreative, lernintensive Projekte und Studienarbeit zentral.",
-          ],
-        },
-        {
-          type: "p",
-          text: "SDT beschreibt die psychologischen Bedingungen dahinter präziser (Regulierungstypen, Grundbedürfnisse); Drive übersetzt sie für Führung, Teams und Produktkontexte. Beides zusammen vermeidet den Fehler, Motivation 2.0 auf jede Aufgabe zu pressen.",
         },
       ],
     },
@@ -237,7 +211,7 @@ export const ramp: FrameworkArticleContent = {
             [
               "<strong>Kernfrage</strong>",
               "Welcher Regulierungstyp? Welches Bedürfnis wird gestärkt oder untergraben?",
-              "Passt die Aufgabe zu Motivation 2.0 oder 3.0? Wo fehlt Sinn trotz Anreizen?",
+              "Passt die Aufgabe zu Carrot-and-Stick oder braucht sie intrinsische Treiber? Wo fehlt Sinn trotz Anreizen?",
             ],
             [
               "<strong>Praxis</strong>",
