@@ -8,9 +8,9 @@ export type DiagramMeta = {
 export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	'sdt-spectrum': {
 		caption:
-			'Nach Ryan & Deci (2000): von links fremdbestimmt nach rechts selbstbestimmt — Amotivation, dann vier Stufen extrinsischer Regulierung (extern = Belohnung/Strafe; introjiziert = Stolz/Schuld/innerer Druck; identifiziert = persönliche Bedeutung; integriert = Übereinstimmung mit eigenen Werten) bis intrinsische Motivation. Auch „extrinsisch“ kann so schrittweise autonomer werden.',
+			'Kontinuum der Selbstbestimmung (Ryan & Deci): links nicht selbstbestimmt (Amotivation), Mitte vier Stufen unter „Extrinsische Motivation“ (externe bis integrierte Regulierung mit Kurzbeschreibung), rechts intrinsische Motivation. Pfeil: steigende Autonomie und Internalisierung.',
 		longDescription:
-			'Horizontales Kontinuum der Motivationsregulation: Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung als gruppierte extrinsische Stufen mit steigender Internalisierung, rechts intrinsische Motivation. Achse von fremdbestimmt zu selbstbestimmt; Pfeil symbolisiert zunehmende Autonomie.'
+			'Säulenlayout mit Farbbalken pro Stufe, darunter volle Regulierungsbezeichnungen und einzeilige deutsche Kurztexte (z. B. extern = Belohnung/Druck von außen; introjiziert = Stolz/Schuld; identifiziert = bewusste Werte; integriert = mit dem Selbst verbunden; intrinsisch = Interesse in der Tätigkeit). Gruppierung der vier mittleren Stufen als extrinsische Motivation; Achse nicht selbstbestimmt nach selbstbestimmt; Pfeil unten für Internalisierung.'
 	},
 	'sdt-needs': {
 		caption:

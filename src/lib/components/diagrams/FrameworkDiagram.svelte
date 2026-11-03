@@ -71,7 +71,7 @@
 	.diagram-frame :global(svg) {
 		display: block;
 		width: 100%;
-		max-width: 36rem;
+		max-width: 40rem;
 		margin: 0 auto;
 		height: auto;
 	}
@@ -93,6 +93,13 @@
 	.diagram-frame :global(.diagram-muted) {
 		fill: var(--diagram-text-muted);
 		font-size: 10px;
+		font-weight: 500;
+	}
+
+	.diagram-frame :global(.diagram-desc) {
+		fill: var(--diagram-text-muted);
+		font-family: var(--font-sans);
+		font-size: 9px;
 		font-weight: 500;
 	}
 
