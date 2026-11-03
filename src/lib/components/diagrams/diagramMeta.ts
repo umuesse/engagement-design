@@ -8,9 +8,9 @@ export type DiagramMeta = {
 export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	'sdt-spectrum': {
 		caption:
-			'Kontinuum intrinsisch ↔ extrinsisch: klassische PBL- und Gamification-Mechaniken liegen oft extrinsisch; Engagement Design zielt auf eine Verschiebung Richtung intrinsischer Motivation.',
+			'Nach Ryan & Deci (2000): von links fremdbestimmt nach rechts selbstbestimmt — Amotivation, dann vier Stufen extrinsischer Regulierung (extern = Belohnung/Strafe; introjiziert = Stolz/Schuld/innerer Druck; identifiziert = persönliche Bedeutung; integriert = Übereinstimmung mit eigenen Werten) bis intrinsische Motivation. Auch „extrinsisch“ kann so schrittweise autonomer werden.',
 		longDescription:
-			'Horizontale Skala von links intrinsisch (Interesse, Bedeutung) nach rechts extrinsisch (Belohnungen, Druck). Marker für Engagement Design links, für PBL und Gamification rechts; gestrichelter Pfeil symbolisiert die angestrebte Verschiebung.'
+			'Horizontales Kontinuum der Motivationsregulation: Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung als gruppierte extrinsische Stufen mit steigender Internalisierung, rechts intrinsische Motivation. Achse von fremdbestimmt zu selbstbestimmt; Pfeil symbolisiert zunehmende Autonomie.'
 	},
 	'sdt-needs': {
 		caption:

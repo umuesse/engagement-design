@@ -80,11 +80,18 @@
 		font-family: var(--font-sans);
 		font-size: 11px;
 		font-weight: 600;
-		fill: var(--color-text);
+		fill: var(--diagram-text);
+	}
+
+	.diagram-frame :global(.diagram-label-on-dark) {
+		font-family: var(--font-sans);
+		font-size: 11px;
+		font-weight: 600;
+		fill: var(--diagram-text-on-dark);
 	}
 
 	.diagram-frame :global(.diagram-muted) {
-		fill: var(--color-muted);
+		fill: var(--diagram-text-muted);
 		font-size: 10px;
 		font-weight: 500;
 	}
@@ -93,6 +100,36 @@
 		font-size: 12px;
 		font-weight: 700;
 		fill: var(--color-accent-strong);
+	}
+
+	.diagram-frame :global(.diagram-segment) {
+		stroke: var(--diagram-segment-border);
+		stroke-width: 1.5;
+	}
+
+	.diagram-frame :global(.diagram-segment-amotivation) {
+		fill: var(--diagram-segment-amotivation);
+	}
+
+	.diagram-frame :global(.diagram-segment-external) {
+		fill: var(--diagram-segment-external);
+	}
+
+	.diagram-frame :global(.diagram-segment-introjected) {
+		fill: var(--diagram-segment-introjected);
+	}
+
+	.diagram-frame :global(.diagram-segment-identified) {
+		fill: var(--diagram-segment-identified);
+	}
+
+	.diagram-frame :global(.diagram-segment-integrated) {
+		fill: var(--diagram-segment-integrated);
+	}
+
+	.diagram-frame :global(.diagram-segment-intrinsic) {
+		fill: var(--diagram-segment-intrinsic);
+		stroke: var(--diagram-segment-border);
 	}
 
 	figcaption {
