@@ -12,6 +12,17 @@
 	--color-accent-alt: #0d9488;
 	--color-accent-soft: rgba(124, 58, 237, 0.12);
 	--color-accent-glow: rgba(236, 72, 153, 0.35);
+	/* Diagram SVG: WCAG 2.2 AA — normal text ≥4.5:1, UI borders ≥3:1 */
+	--diagram-text: #1a1625;
+	--diagram-text-muted: #433855;
+	--diagram-text-on-dark: #ffffff;
+	--diagram-segment-border: #433855;
+	--diagram-segment-amotivation: #d4dce8;
+	--diagram-segment-external: #b8c5d6;
+	--diagram-segment-introjected: #e0e7ff;
+	--diagram-segment-identified: #ede9fe;
+	--diagram-segment-integrated: #e9d5ff;
+	--diagram-segment-intrinsic: #5b21b6;
 	--gradient-brand: linear-gradient(135deg, #7c3aed 0%, #ec4899 48%, #14b8a6 100%);
 	--gradient-hero: radial-gradient(ellipse 80% 60% at 10% -10%, rgba(124, 58, 237, 0.22), transparent 55%),
 		radial-gradient(ellipse 70% 50% at 100% 0%, rgba(236, 72, 153, 0.16), transparent 50%),
