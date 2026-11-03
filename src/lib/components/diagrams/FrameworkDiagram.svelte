@@ -43,20 +43,21 @@
 	const meta = $derived(diagramMeta[id]);
 	const Diagram = $derived(components[id]);
 	const captionId = $derived(`diagram-caption-${id}`);
+	const descriptionId = $derived(`diagram-description-${id}`);
 </script>
 
 <figure
 	class="framework-diagram glass-panel"
 	class:sdt-spectrum={id === 'sdt-spectrum'}
 	class:sdt-needs={id === 'sdt-needs'}
+	aria-labelledby={captionId}
+	aria-describedby={descriptionId}
 >
-	<div class="diagram-frame" role="img" aria-labelledby={captionId}>
+	<div class="diagram-frame">
 		<Diagram />
 	</div>
-	<figcaption id={captionId}>
-		{meta.caption}
-		<span class="sr-only">{meta.longDescription}</span>
-	</figcaption>
+	<figcaption id={captionId}>{meta.caption}</figcaption>
+	<p id={descriptionId} class="sr-only">{meta.longDescription}</p>
 </figure>
 
 <style>
@@ -88,11 +89,15 @@
 	}
 
 	.diagram-frame :global(svg) {
-		display: block;
 		width: 100%;
 		max-width: 40rem;
 		margin: 0 auto;
 		height: auto;
+	}
+
+	/* Responsive Dual-SVG (sdt-needs): display per Kind-Komponente, nicht überschreiben */
+	.diagram-frame :global(svg:not(.layout-horizontal):not(.layout-vertical)) {
+		display: block;
 	}
 
 	.framework-diagram.sdt-spectrum .diagram-frame :global(svg),
@@ -183,5 +188,17 @@
 		max-width: 36rem;
 		margin-left: auto;
 		margin-right: auto;
+	}
+
+	.framework-diagram :global(.sr-only) {
+		position: absolute;
+		width: 1px;
+		height: 1px;
+		padding: 0;
+		margin: -1px;
+		overflow: hidden;
+		clip: rect(0, 0, 0, 0);
+		white-space: nowrap;
+		border: 0;
 	}
 </style>

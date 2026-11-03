@@ -24,15 +24,13 @@
 	{#snippet articleBody()}
 		{#if article.sections?.length}
 			{#each article.sections as section, index (index)}
-				{#if section.blocksBeforeDiagram}
-					<FrameworkContentBlocks blocks={section.blocks} />
-					{#if section.diagramIds?.length}
-						<FrameworkDiagramList ids={section.diagramIds} />
-					{/if}
-				{:else}
-					{#if section.diagramIds?.length}
-						<FrameworkDiagramList ids={section.diagramIds} />
-					{/if}
+				{#if section.blocksBeforeDiagram?.length}
+					<FrameworkContentBlocks blocks={section.blocksBeforeDiagram} />
+				{/if}
+				{#if section.diagramIds?.length}
+					<FrameworkDiagramList ids={section.diagramIds} />
+				{/if}
+				{#if section.blocks.length}
 					<FrameworkContentBlocks blocks={section.blocks} />
 				{/if}
 			{/each}

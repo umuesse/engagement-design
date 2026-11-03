@@ -88,15 +88,16 @@ export const sdt: FrameworkArticleContent = {
 		},
 		{
 			diagramIds: ['sdt-needs'],
-			blocksBeforeDiagram: true,
-			blocks: [
+			blocksBeforeDiagram: [
 				{
 					type: 'callout',
 					title: 'Merksatz für Gestaltung',
 					paragraphs: [
 						'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
 					]
-				},
+				}
+			],
+			blocks: [
 				{ type: 'h2', text: 'Relevanz für Engagement Design' },
 				{
 					type: 'p',
