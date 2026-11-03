@@ -32,9 +32,12 @@
 	<h2 id="next-title">Bereit für die Praxis?</h2>
 	<p>
 		Nach der Inputphase geht es in die eigenständige Projektphase — Frameworks anwenden, kritisch reflektieren,
-		Ergebnisse dokumentieren.
+		Ergebnisse dokumentieren. Themen findest du in den <a href="/anwendungsfelder">Anwendungsfeldern</a>.
 	</p>
-	<a class="link-arrow" href="/modul/projektphase">Zur Projektphase →</a>
+	<p class="action-links">
+		<a class="link-arrow" href="/modul/projektphase">Zur Projektphase →</a>
+		<a class="link-arrow" href="/anwendungsfelder">Anwendungsfelder →</a>
+	</p>
 </section>
 
 <style>
@@ -62,5 +65,12 @@
 		margin: 0 0 1rem;
 		max-width: 38rem;
 		color: var(--color-muted);
+	}
+
+	.action-links {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem 1.5rem;
+		margin-bottom: 0 !important;
 	}
 </style>

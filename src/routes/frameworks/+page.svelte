@@ -28,6 +28,14 @@
 	</p>
 </section>
 
+<section class="glass-panel highlight" aria-labelledby="apply-title">
+	<h2 id="apply-title">In die Praxis</h2>
+	<p>
+		Für dein Projekt: <a href="/anwendungsfelder">Anwendungsfelder</a> mit Beispielideen und
+		<a href="/modul/projektphase">Projektphase</a> mit Ablauf und Deliverables (Platzhalter).
+	</p>
+</section>
+
 <p class="back text-muted">
 	<a class="link-arrow" href="/modul/inputphase">Zur Inputphase (Tagesplan) →</a>
 </p>

@@ -37,7 +37,10 @@
 		Engagement Design geht über Gamification hinaus: nicht Punkte und Badges als Selbstzweck, sondern
 		motivierende, bedeutsame Erfahrungen — psychologisch fundiert, ethisch reflektiert, menschenzentriert.
 	</p>
-	<a class="cta" href="/modul/inputphase">Inputphase entdecken</a>
+	<div class="hero-actions">
+		<a class="cta" href="/modul/inputphase">Inputphase entdecken</a>
+		<a class="cta secondary" href="/modul/projektphase">Zur Projektphase</a>
+	</div>
 </section>
 
 <section class="glass-panel" aria-labelledby="shift-title">
@@ -72,6 +75,7 @@
 	<ul class="link-list">
 		<li><a href="/frameworks">Frameworks &amp; theoretische Basis</a></li>
 		<li><a href="/anwendungsfelder">Anwendungsfelder für dein Projekt</a></li>
+		<li><a href="/modul/projektphase">Projektphase — Ablauf &amp; Deliverables</a></li>
 	</ul>
 </section>
 
@@ -122,11 +126,29 @@
 		transition: transform var(--motion-fast), box-shadow var(--motion-fast);
 	}
 
+	.hero-actions {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 0.65rem;
+	}
+
 	.cta:hover {
 		transform: translateY(-2px);
 		box-shadow: var(--shadow-lg);
 		color: #fff;
 		text-decoration: none;
+	}
+
+	.cta.secondary {
+		background: var(--color-surface-solid);
+		color: var(--color-accent-strong);
+		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-sm);
+	}
+
+	.cta.secondary:hover {
+		color: var(--color-accent-strong);
+		border-color: rgba(124, 58, 237, 0.35);
 	}
 
 	.glass-panel {

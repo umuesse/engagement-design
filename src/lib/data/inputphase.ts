@@ -68,6 +68,10 @@ export const inputDays: InputDay[] = [
 			'Touchpoints und Journey-Schritte für ein Service-basiertes Engagement skizzieren',
 			'Die Projektphase vorbereiten: Thema, Frameworks, nächste Schritte festlegen'
 		],
-		frameworkHint: '/modul/projektphase'
+		frameworkHint: '/modul/projektphase',
+		frameworkLinks: [
+			{ href: '/modul/projektphase', label: 'Projektphase' },
+			{ href: '/anwendungsfelder', label: 'Anwendungsfelder' }
+		]
 	}
 ];

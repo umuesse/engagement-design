@@ -1,75 +1,66 @@
 <script lang="ts">
+	import ApplicationFieldCard from '#lib/components/ApplicationFieldCard.svelte';
 	import PageIntro from '#lib/components/PageIntro.svelte';
-
-	const fields = [
-		{
-			title: 'Bildung & Lernen',
-			desc: 'Learning Experience Design — Kurse, Lernpfade, intrinsische Motivation.'
-		},
-		{
-			title: 'Gesundheit',
-			desc: 'Health Engagement — Verhaltensänderung, Gewohnheiten, ethische Grenzen.'
-		},
-		{
-			title: 'Nachhaltigkeit',
-			desc: 'Sustainable Behavior Design — langfristige Motivation statt Kurzzeit-Belohnungen.'
-		},
-		{
-			title: 'Organisationen & HR',
-			desc: 'Employee Engagement — Kultur, Onboarding, Zusammenarbeit.'
-		},
-		{
-			title: 'Civic Tech',
-			desc: 'Gesellschaftliche Teilhabe — Bürgerbeteiligung, Community, Impact.'
-		}
-	];
+	import { applicationFields } from '#lib/data/anwendungsfelder';
 </script>
 
 <svelte:head>
 	<title>Anwendungsfelder — Engagement Design</title>
+	<meta
+		name="description"
+		content="Fünf Anwendungsfelder für Engagement-Design-Projekte: Bildung, Gesundheit, Nachhaltigkeit, HR, Civic Tech — mit Beispielideen und Framework-Hinweisen."
+	/>
 </svelte:head>
 
 <PageIntro
 	tag="Projektideen"
 	title="Anwendungsfelder"
-	lead="Typische Kontexte für dein Engagement-Design-Projekt. Pro Feld folgen später Beispielideen und Framework-Hinweise (Goldfish 4)."
+	lead="Wo dein Engagement-Design-Projekt ansetzen kann: fünf Kontexte aus der Modulplanung — mit Kurzbeschreibung, Beispielidee und passenden Framework-Links."
 />
 
 <div class="fields-grid">
-	{#each fields as field (field.title)}
-		<article class="field-card glass-panel">
-			<h2>{field.title}</h2>
-			<p>{field.desc}</p>
-		</article>
+	{#each applicationFields as field (field.id)}
+		<ApplicationFieldCard {field} />
 	{/each}
 </div>
+
+<section class="glass-panel next" aria-labelledby="next-title">
+	<h2 id="next-title">Vom Feld zum Projekt</h2>
+	<p>
+		Wähle ein Feld als Ausgangspunkt, verknüpfe es mit Frameworks aus der
+		<a href="/modul/inputphase">Inputphase</a> und starte in der
+		<a href="/modul/projektphase">Projektphase</a> mit Ablauf und Deliverables.
+	</p>
+	<p class="links-row">
+		<a class="link-arrow" href="/modul/projektphase">Zur Projektphase →</a>
+		<a class="link-arrow" href="/frameworks">Framework-Hub →</a>
+	</p>
+</section>
 
 <style>
 	.fields-grid {
 		display: grid;
 		gap: 1rem;
-		grid-template-columns: repeat(auto-fit, minmax(14rem, 1fr));
+		grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+		margin-bottom: 1.25rem;
 	}
 
-	.field-card {
-		margin-bottom: 0;
-		padding: 1.1rem 1.15rem;
-		transition: transform var(--motion-fast);
-	}
-
-	.field-card:hover {
-		transform: translateY(-2px);
-	}
-
-	.field-card h2 {
+	.next h2 {
 		margin: 0 0 0.5rem;
-		font-size: 1.05rem;
+		font-size: 1.15rem;
 	}
 
-	.field-card p {
-		margin: 0;
-		font-size: 0.9375rem;
+	.next p {
+		margin: 0 0 0.75rem;
+		line-height: 1.6;
 		color: var(--color-muted);
-		line-height: 1.5;
+		max-width: 42rem;
+	}
+
+	.links-row {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 1rem 1.5rem;
+		margin-bottom: 0 !important;
 	}
 </style>

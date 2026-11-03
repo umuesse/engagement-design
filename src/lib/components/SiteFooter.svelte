@@ -4,7 +4,7 @@
 			<strong>Engagement Design</strong> — Lern- und Orientierungshilfe für Studierende. Inhalte aus der
 			Modulplanung GAM → ED.
 		</p>
-		<p class="muted">Goldfish 2: Inputphase mit Lernzielen · Framework-Vertiefung folgt in späteren Slices.</p>
+		<p class="muted">Goldfish 4: Anwendungsfelder &amp; Projektphase · Weitere Framework-Vertiefungen folgen.</p>
 	</div>
 </footer>
 
