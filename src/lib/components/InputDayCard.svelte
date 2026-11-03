@@ -32,7 +32,17 @@
 			</ul>
 		</div>
 
-		{#if day.frameworkHint}
+		{#if day.frameworkLinks?.length}
+			<p class="hint">
+				Vertiefung:
+				{#each day.frameworkLinks as link, index (link.href)}
+					{#if index > 0}
+						<span aria-hidden="true"> · </span>
+					{/if}
+					<a href={link.href}>{link.label}</a>
+				{/each}
+			</p>
+		{:else if day.frameworkHint}
 			<p class="hint">
 				{#if day.day === 5}
 					Weiter zur <a href={day.frameworkHint}>Projektphase</a> — oder

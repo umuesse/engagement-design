@@ -1,9 +1,15 @@
+export type FrameworkLink = {
+	href: string;
+	label: string;
+};
+
 export type InputDay = {
 	day: number;
 	theme: string;
 	accent: string;
 	objectives: string[];
 	frameworkHint?: string;
+	frameworkLinks?: FrameworkLink[];
 };
 
 export const inputDays: InputDay[] = [
@@ -26,7 +32,11 @@ export const inputDays: InputDay[] = [
 			'Flow (Balance aus Challenge und Skill) für Lern- oder Produktsettings beschreiben',
 			'Mit dem ARCS-Modell Motivationslücken in einem Szenario strukturieren'
 		],
-		frameworkHint: '/frameworks'
+		frameworkHint: '/frameworks',
+		frameworkLinks: [
+			{ href: '/frameworks/sdt', label: 'SDT vertiefen' },
+			{ href: '/frameworks', label: 'Framework-Hub' }
+		]
 	},
 	{
 		day: 3,
