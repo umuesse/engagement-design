@@ -15,7 +15,7 @@ export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 		caption:
 			'Die drei Grundbedürfnisse nach Deci & Ryan — Autonomie, Kompetenz und Eingebundenheit.',
 		longDescription:
-			'Drei Säulen von links nach rechts: Kompetenz, Autonomie, Eingebundenheit; jeweils farbiger Kopfbereich mit Bedürfnisname und hellerer Textbereich mit Kurzdefinition; oben gemeinsame Verbindungslinie.'
+			'Drei Säulen (Kompetenz, Autonomie, Eingebundenheit) mit Kopf und mehrzeiligem Kurztext in der Spalte; oben Verbindungslinie. Breit nebeneinander, schmal untereinander gestapelt.'
 	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',
