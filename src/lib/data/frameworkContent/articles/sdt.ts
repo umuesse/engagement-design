@@ -45,16 +45,21 @@ export const sdt: FrameworkArticleContent = {
 						'Identifizierte und integrierte Regulierung verbinden Handeln mit persönlicher Bedeutung bzw. eigenen Werten.'
 					]
 				},
+				{ type: 'h2', text: 'Korrumpierungseffekt' },
+				{
+					type: 'p',
+					text: 'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) beschreibt, wie sichtbare, erwartete externe Belohnungen langfristig freiwilliges Interesse an einer Tätigkeit schwächen können — typisch bei kontrollierender externer Regulierung, nicht bei jeder Form extrinsischer Motivation.'
+				},
+				{
+					type: 'p',
+					text: 'Klassische Evidenz (Overjustification-Hypothese): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a>, <em>Journal of Personality and Social Psychology</em> — erwartete Belohnungen senkten das spätere freiwillige Weitermachen an der Aktivität.'
+				},
 				{
 					type: 'callout',
 					title: 'Merksatz',
 					paragraphs: [
-						'Korrumpierungseffekt: Externe Belohnungen können kurzfristig aktivieren — untergraben bei kontrollierender Erwartung aber langfristig intrinsisches Interesse.'
+						'Externe Belohnungen können kurzfristig aktivieren — untergraben bei kontrollierender Erwartung aber langfristig intrinsisches Interesse.'
 					]
-				},
-				{
-					type: 'p',
-					text: 'Studienbeleg (Overjustification): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a> zeigen, dass erwartete Belohnungen das spätere freiwillige Interesse an einer Tätigkeit senken können.'
 				},
 				{
 					type: 'callout',
