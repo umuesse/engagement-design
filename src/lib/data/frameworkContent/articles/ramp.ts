@@ -131,7 +131,7 @@ export const ramp: FrameworkArticleContent = {
           type: "callout",
           title: "Merksatz für Gestaltung",
           paragraphs: [
-            "Vier Fragen: Verbundenheit spürbar? Autonomie möglich? Meisterschaft (Kompetenz) förderlich? Sinn erzählbar — ohne Relatedness zu ersetzen?",
+            "Vier Fragen: Verbundenheit spürbar? Autonomie möglich? Meisterschaft (Kompetenz) förderlich? Sinn (Wofür) verständlich?",
           ],
         },
       ],
