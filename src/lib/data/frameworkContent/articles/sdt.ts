@@ -53,6 +53,10 @@ export const sdt: FrameworkArticleContent = {
 					]
 				},
 				{
+					type: 'p',
+					text: 'Studienbeleg (Overjustification): <a href="https://web.mit.edu/curhan/www/docs/Articles/15341_Readings/Motivation/Lepper_et_al_Undermining_Childrens_Intrinsic_Interest.pdf" rel="noopener noreferrer" target="_blank">Lepper, Greene &amp; Nisbett (1973)</a> zeigen, dass erwartete Belohnungen das spätere freiwillige Interesse an einer Tätigkeit senken können.'
+				},
+				{
 					type: 'callout',
 					title: 'Merksatz für Gestaltung',
 					paragraphs: [
