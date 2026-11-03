@@ -45,7 +45,7 @@
 	const captionId = $derived(`diagram-caption-${id}`);
 </script>
 
-<figure class="framework-diagram glass-panel">
+<figure class="framework-diagram glass-panel" class:sdt-spectrum={id === 'sdt-spectrum'}>
 	<div class="diagram-frame" role="img" aria-labelledby={captionId}>
 		<Diagram />
 	</div>
@@ -63,8 +63,18 @@
 		overflow: hidden;
 	}
 
+	.framework-diagram.sdt-spectrum {
+		overflow: visible;
+	}
+
 	.diagram-frame {
 		width: 100%;
+		overflow-x: auto;
+		overflow-y: visible;
+		min-height: 0;
+	}
+
+	.framework-diagram.sdt-spectrum .diagram-frame {
 		overflow-x: auto;
 	}
 
@@ -74,6 +84,11 @@
 		max-width: 40rem;
 		margin: 0 auto;
 		height: auto;
+	}
+
+	.framework-diagram.sdt-spectrum .diagram-frame :global(svg.layout-horizontal),
+	.framework-diagram.sdt-spectrum .diagram-frame :global(.sdt-spectrum-wrap svg) {
+		max-width: 45rem;
 	}
 
 	.diagram-frame :global(.diagram-label) {
@@ -99,7 +114,7 @@
 	.diagram-frame :global(.diagram-desc) {
 		fill: var(--diagram-text-muted);
 		font-family: var(--font-sans);
-		font-size: 9px;
+		font-size: 10px;
 		font-weight: 500;
 	}
 
