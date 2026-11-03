@@ -1,5 +1,5 @@
 <svg
-	viewBox="0 0 720 368"
+	viewBox="0 0 720 218"
 	width="100%"
 	preserveAspectRatio="xMidYMid meet"
 	xmlns="http://www.w3.org/2000/svg"
@@ -55,8 +55,6 @@
 		</text>
 	{/each}
 
-	<line x1="32" y1="318" x2="688" y2="318" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
-	<polygon points="688,318 678,313 678,323" fill="#5b21b6" />
-	<text x="360" y="342" text-anchor="middle" class="diagram-muted">Steigende Autonomie und Internalisierung →</text>
-	<text x="360" y="358" text-anchor="middle" class="diagram-muted">(nach Ryan &amp; Deci, 2000)</text>
+	<line x1="32" y1="208" x2="688" y2="208" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
+	<polygon points="688,208 678,203 678,213" fill="#5b21b6" />
 </svg>

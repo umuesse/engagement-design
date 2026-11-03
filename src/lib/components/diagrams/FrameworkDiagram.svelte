@@ -65,6 +65,7 @@
 
 	.framework-diagram.sdt-spectrum {
 		overflow: visible;
+		padding: 1rem 1.15rem 0.65rem;
 	}
 
 	.diagram-frame {
@@ -76,6 +77,11 @@
 
 	.framework-diagram.sdt-spectrum .diagram-frame {
 		overflow-x: auto;
+		margin-bottom: 0;
+	}
+
+	.framework-diagram.sdt-spectrum figcaption {
+		margin-top: 0.5rem;
 	}
 
 	.diagram-frame :global(svg) {
