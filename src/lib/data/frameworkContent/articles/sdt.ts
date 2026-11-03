@@ -30,26 +30,26 @@ export const sdt: FrameworkArticleContent = {
 		{
 			diagramIds: ['sdt-spectrum'],
 			blocks: [
-				{ type: 'h2', text: 'Intrinsisch vs. extrinsisch' },
+				{ type: 'h2', text: 'Extrinsisch vs. intrinsisch' },
 				{
 					type: 'p',
-					text: 'Intrinsische Motivation kommt aus der Tätigkeit selbst. Extrinsische Motivation reicht von reinem Druck von außen bis zu Werten, die man als die eigenen erlebt — das Kontinuum oben macht diese Abstufungen sichtbar.'
+					text: 'Extrinsische Motivation reicht von reinem Druck von außen bis zu Werten, die man als die eigenen erlebt. Intrinsische Motivation kommt aus der Tätigkeit selbst — das Kontinuum oben macht diese Abstufungen von links nach rechts sichtbar.'
+				},
+				{ type: 'h2', text: 'Anreize und Regulierungstypen' },
+				{
+					type: 'ul',
+					items: [
+						'Grundbedürfnisse zu untergraben (z. B. erzwungene Teilnahme) verschiebt Menschen eher Richtung Amotivation oder externer Kontrolle.',
+						'Rein externe Regulierung hängt an Belohnung oder Strafe — oft fragil, wenn der Anreiz entfällt.',
+						'Introjizierte Regulierung (Stolz, Schuld, innerer Druck) kann aktivieren, ohne echte Autonomie zu stärken.',
+						'Identifizierte und integrierte Regulierung verbinden Handeln mit persönlicher Bedeutung bzw. eigenen Werten.'
+					]
 				},
 				{
 					type: 'callout',
 					title: 'Merksatz',
 					paragraphs: [
 						'Externe Belohnungen können kurzfristig aktivieren, aber langfristig inneres Interesse untergraben — besonders wenn sie Kontrolle signalisieren.'
-					]
-				},
-				{ type: 'h2', text: 'Anreize und Regulierungstypen' },
-				{
-					type: 'ul',
-					items: [
-						'Rein externe Regulierung hängt an Belohnung oder Strafe — oft fragil, wenn der Anreiz entfällt.',
-						'Introjizierte Regulierung (Stolz, Schuld, innerer Druck) kann aktivieren, ohne echte Autonomie zu stärken.',
-						'Identifizierte und integrierte Regulierung verbinden Handeln mit persönlicher Bedeutung bzw. eigenen Werten.',
-						'Grundbedürfnisse zu untergraben (z. B. erzwungene Teilnahme) verschiebt Menschen eher Richtung Amotivation oder externer Kontrolle.'
 					]
 				},
 				{
