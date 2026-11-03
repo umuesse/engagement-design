@@ -6,6 +6,7 @@ export const octalysis: FrameworkArticleContent = {
 	title: 'Octalysis Framework',
 	lead: 'Yu-kai Chous Octalysis ordnet Motivation in acht Core Drives — praktisch für Brainstorming, aber in ED immer kritisch gegen Ethik und intrinsische Bedeutung gespiegelt.',
 	metaDescription: 'Octalysis: 8 Core Drives, Left vs. Right Brain — anwendbar und kritisch lesen.',
+	diagramId: 'octalysis',
 	keyTerms: [
 		{ term: 'Core Drives', definition: 'Motivationskräfte wie Epic Meaning, Accomplishment, Social Influence u. a.' },
 		{ term: 'Left Brain / extrinsisch', definition: 'Logik, Status, Besitz — oft belohnungs- und zielorientiert.' },

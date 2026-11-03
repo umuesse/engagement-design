@@ -9,6 +9,21 @@ export type FrameworkKeyTerm = {
 	definition: string;
 };
 
+export type FrameworkDiagramId =
+	| 'sdt'
+	| 'flow'
+	| 'arcs'
+	| 'octalysis'
+	| 'hexad'
+	| 'mda'
+	| 'fogg'
+	| 'hook'
+	| 'meaningful-gamification'
+	| 'dark-patterns'
+	| 'hcd'
+	| 'experience-design'
+	| 'service-design';
+
 export type ContentBlock =
 	| { type: 'h2'; text: string }
 	| { type: 'p'; text: string }
@@ -26,6 +41,7 @@ export type FrameworkArticleContent = {
 	title: string;
 	lead: string;
 	metaDescription: string;
+	diagramId: FrameworkDiagramId;
 	keyTerms: FrameworkKeyTerm[];
 	sources: FrameworkSource[];
 	blocks: ContentBlock[];

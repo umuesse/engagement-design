@@ -6,6 +6,7 @@ export const meaningfulGamification: FrameworkArticleContent = {
 	title: 'Meaningful Gamification / RECIPE',
 	lead: 'Scott Nicholson fordert Gamification jenseits von PBL: RECIPE verbindet Reflexion, Wahl und echtes Play — Ausgangspunkt für intrinsisch motivierendes Engagement Design.',
 	metaDescription: 'Meaningful Gamification: RECIPE-Prinzipien — Reflection, Exposition, Choice, Information, Play, Engagement.',
+	diagramId: 'meaningful-gamification',
 	keyTerms: [
 		{ term: 'Reflection', definition: 'Nutzer reflektieren Bedeutung und eigenes Lernen — nicht nur klicken.' },
 		{ term: 'Exposition', definition: 'Inhalte/Story werden erlebbar gemacht, nicht nur punktet.' },

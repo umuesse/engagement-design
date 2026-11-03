@@ -6,6 +6,7 @@ export const fogg: FrameworkArticleContent = {
 	title: 'Fogg Behavior Model',
 	lead: 'BJ Foggs Modell Behavior = Motivation × Ability × Prompt macht Verhalten designbar — solange du Manipulation von unterstützender Hilfe trennst.',
 	metaDescription: 'Fogg Behavior Model: Motivation, Ability, Prompt — Tiny Habits und ethische Grenzen.',
+	diagramId: 'fogg',
 	keyTerms: [
 		{ term: 'Motivation', definition: 'Wunsch oder Druck, eine Handlung auszuführen — schwankt über die Zeit.' },
 		{ term: 'Ability', definition: 'Wie einfach die Handlung ist — Zeit, Geld, kognitive Last, soziale Hürden.' },

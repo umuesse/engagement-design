@@ -6,6 +6,7 @@ export const hexad: FrameworkArticleContent = {
 	title: 'HEXAD Player Types',
 	lead: 'Marczewskis HEXAD erweitert Spielertypen um Motivation und Kontext — nützlich für Zielgruppenanalyse, aber kein Stereotypen-Ersatz für echte Research.',
 	metaDescription: 'HEXAD: Philanthropist, Socialiser, Free Spirit, Achiever, Player, Disruptor — Zielgruppen nuanciert denken.',
+	diagramId: 'hexad',
 	keyTerms: [
 		{ term: 'Philanthropist', definition: 'Motiviert durch Sinn und Beitrag ohne eigene Belohnung.' },
 		{ term: 'Socialiser', definition: 'Motiviert durch Beziehungen und soziale Interaktion.' },

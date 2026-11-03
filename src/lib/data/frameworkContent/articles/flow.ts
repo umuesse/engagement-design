@@ -6,6 +6,7 @@ export const flow: FrameworkArticleContent = {
 	title: 'Flow Theory',
 	lead: 'Csikszentmihalyi beschreibt Flow als optimale Erfahrung — wenn Fähigkeit und Herausforderung im Gleichgewicht sind. Für Engagement Design ist das der Sweet Spot zwischen Langeweile und Überforderung.',
 	metaDescription: 'Flow Theory: Challenge-Skill-Balance, Flow-Kanal und Bedeutung für Lern- und Produkterlebnisse.',
+	diagramId: 'flow',
 	keyTerms: [
 		{ term: 'Flow', definition: 'Vollständige Vertiefung in eine Aktivität — Zeitgefühl und Selbstkritik treten in den Hintergrund.' },
 		{ term: 'Challenge-Skill-Balance', definition: 'Aufgabe ist anspruchsvoll genug, aber mit vorhandenen Fähigkeiten machbar.' },

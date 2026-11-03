@@ -6,6 +6,7 @@ export const arcs: FrameworkArticleContent = {
 	title: 'ARCS-Modell',
 	lead: 'Kellers ARCS-Modell übersetzt Motivationspsychologie in vier designbare Dimensionen — ideal als Checkliste zwischen Theorie und konkretem Kurs- oder Produktkonzept.',
 	metaDescription: 'ARCS: Attention, Relevance, Confidence, Satisfaction — Motivationslücken strukturieren.',
+	diagramId: 'arcs',
 	keyTerms: [
 		{ term: 'Attention (A)', definition: 'Aufmerksamkeit gewinnen und halten — ohne nur zu schockieren.' },
 		{ term: 'Relevance (R)', definition: 'Bedarf, Ziele und Identität der Zielgruppe anknüpfen.' },

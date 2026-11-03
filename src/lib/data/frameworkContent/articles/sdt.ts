@@ -7,6 +7,7 @@ export const sdt: FrameworkArticleContent = {
 	lead: 'Deci & Ryan liefern das psychologische Fundament für Engagement Design: Nachhaltige Motivation entsteht, wenn Grundbedürfnisse erfüllt werden — nicht wenn man nur Belohnungen drauflegt.',
 	metaDescription:
 		'SDT für Studierende: Autonomie, Kompetenz, Eingebundenheit, intrinsische vs. extrinsische Motivation und Relevanz für Engagement Design.',
+	diagramId: 'sdt',
 	keyTerms: [
 		{ term: 'Autonomie', definition: 'Erleben von Wahlfreiheit und Selbstbestimmung — volle Zustimmung zu Handlungen.' },
 		{ term: 'Kompetenz', definition: 'Gefühl, Herausforderungen zu bewältigen und zu wachsen — Feedback und passende Schwierigkeit.' },

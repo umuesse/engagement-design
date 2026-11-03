@@ -6,6 +6,7 @@ export const mda: FrameworkArticleContent = {
 	title: 'MDA Framework',
 	lead: 'Mechanics, Dynamics, Aesthetics — das MDA-Framework aus Game Design hilft, von Regeln zur spürbaren Erfahrung zu denken. Pflichtlektüre für systemisches Engagement Design.',
 	metaDescription: 'MDA: Mechanics → Dynamics → Aesthetics — Spieldesign-Denken für Engagement-Systeme.',
+	diagramId: 'mda',
 	keyTerms: [
 		{ term: 'Mechanics', definition: 'Konkrete Regeln, Objekte, Aktionen — was formal möglich ist.' },
 		{ term: 'Dynamics', definition: 'Verhalten und Muster, die aus Mechanics entstehen — z. B. Wettbewerb, Kooperation.' },
