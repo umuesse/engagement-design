@@ -49,8 +49,7 @@ export const sdt: FrameworkArticleContent = {
 					type: 'callout',
 					title: 'Merksatz',
 					paragraphs: [
-						'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) betrifft vor allem kontrollierende, erwartete externe Anreize — typisch für externe Regulierung links im Kontinuum.',
-						'Nicht jede extrinsische Motivation ist „korrumpierend“: identifizierte und integrierte Regulierung kann relativ autonom sein und sich mit innerem Interesse vertragen.'
+						'Korrumpierungseffekt: Externe Belohnungen können kurzfristig aktivieren — untergraben bei kontrollierender Erwartung aber langfristig intrinsisches Interesse.'
 					]
 				},
 				{
