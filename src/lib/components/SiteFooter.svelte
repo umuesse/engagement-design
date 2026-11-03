@@ -1,10 +1,10 @@
 <footer class="site-footer">
 	<div class="footer-inner">
 		<p>
-			<strong>Engagement Design</strong> — Modulwebsite (Work in Progress). Inhalte basieren auf der
+			<strong>Engagement Design</strong> — Lern- und Orientierungshilfe für Studierende. Inhalte aus der
 			Modulplanung GAM → ED.
 		</p>
-		<p class="muted">Goldfish 1: Struktur & Navigation — Framework-Inhalte folgen in späteren Slices.</p>
+		<p class="muted">Goldfish 2: Inputphase mit Lernzielen · Framework-Vertiefung folgt in späteren Slices.</p>
 	</div>
 </footer>
 
@@ -12,7 +12,8 @@
 	.site-footer {
 		border-top: 1px solid var(--color-border);
 		margin-top: auto;
-		background: var(--color-surface-elevated);
+		background: rgba(255, 255, 255, 0.55);
+		backdrop-filter: blur(10px);
 	}
 
 	.footer-inner {
@@ -20,7 +21,7 @@
 		margin: 0 auto;
 		padding: 1.5rem 1.25rem 2rem;
 		font-size: 0.875rem;
-		line-height: 1.5;
+		line-height: 1.55;
 	}
 
 	.muted {

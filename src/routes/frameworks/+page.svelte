@@ -30,13 +30,14 @@
 </svelte:head>
 
 <PageIntro
+	tag="Theorie & Werkzeuge"
 	title="Frameworks & theoretische Basis"
-	lead="Überblick über die im Modulplan vorgesehenen Ansätze. Einzelne Vertiefungsseiten folgen ab Goldfish 3."
+	lead="Überblick über die Ansätze aus der Modulplanung. Einzelne Vertiefungsseiten folgen ab Goldfish 3 — in der Inputphase siehst du bereits, wann welches Framework drankommt."
 />
 
 <div class="framework-grid">
 	{#each areas as area (area.title)}
-		<section class="framework-block">
+		<section class="framework-block glass-panel">
 			<h2>{area.title}</h2>
 			<ul>
 				{#each area.items as item (item)}
@@ -47,18 +48,21 @@
 	{/each}
 </div>
 
+<p class="back text-muted">
+	<a class="link-arrow" href="/modul/inputphase">Zur Inputphase (Tagesplan) →</a>
+</p>
+
 <style>
 	.framework-grid {
 		display: grid;
 		gap: 1rem;
 		grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+		margin-bottom: 1.5rem;
 	}
 
 	.framework-block {
-		padding: 1rem;
-		border: 1px solid var(--color-border);
-		border-radius: 0.5rem;
-		background: var(--color-surface);
+		padding: 1.1rem 1.15rem;
+		margin-bottom: 0;
 	}
 
 	.framework-block h2 {
@@ -72,5 +76,9 @@
 		font-size: 0.9375rem;
 		display: grid;
 		gap: 0.35rem;
+	}
+
+	.back {
+		margin: 0;
 	}
 </style>

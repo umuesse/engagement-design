@@ -5,14 +5,16 @@
 			duration: '4–5 Tage',
 			href: '/modul/inputphase',
 			summary:
-				'Theoretische und konzeptionelle Grundlagen: Was ist Engagement Design, Motivationspsychologie, Frameworks, Ethik und Methoden.'
+				'Theoretische Grundlagen: Begriffsklärung, Motivationspsychologie, Frameworks, Ethik und Methoden — mit Lernzielen pro Tag.',
+			accent: 'violet'
 		},
 		{
 			title: 'Projektphase',
 			duration: 'Eigenständig',
 			href: '/modul/projektphase',
 			summary:
-				'Eigenständige Bearbeitung eines Engagement-Design-Projekts — Anwendung der Frameworks in einem realen Kontext.'
+				'Dein Engagement-Design-Projekt: Frameworks anwenden, kritisch reflektieren, Ergebnisse dokumentieren.',
+			accent: 'teal'
 		}
 	];
 
@@ -29,16 +31,16 @@
 </svelte:head>
 
 <section class="hero" aria-labelledby="hero-title">
-	<p class="eyebrow">Bachelor · Umbenennung von Gamification (GAM)</p>
-	<h1 id="hero-title">Engagement Design</h1>
+	<p class="eyebrow">Studierenden-Modul · GAM → ED</p>
+	<h1 id="hero-title">Gestalte Erfahrungen, die wirklich binden.</h1>
 	<p class="hero-lead">
-		Engagement Design ist breiter und präziser als Gamification: Es geht nicht primär um Punkte, Abzeichen
-		und Ranglisten, sondern um die gezielte Gestaltung von Erfahrungen, die Menschen motivieren, binden
-		und bedeutsam beschäftigen.
+		Engagement Design geht über Gamification hinaus: nicht Punkte und Badges als Selbstzweck, sondern
+		motivierende, bedeutsame Erfahrungen — psychologisch fundiert, ethisch reflektiert, menschenzentriert.
 	</p>
+	<a class="cta" href="/modul/inputphase">Inputphase entdecken</a>
 </section>
 
-<section class="panel" aria-labelledby="shift-title">
+<section class="glass-panel" aria-labelledby="shift-title">
 	<h2 id="shift-title">Warum der Shift?</h2>
 	<ul class="shift-list">
 		{#each shifts as point (point)}
@@ -47,84 +49,104 @@
 	</ul>
 </section>
 
-<section class="panel" aria-labelledby="modul-title">
+<section class="glass-panel" aria-labelledby="modul-title">
 	<h2 id="modul-title">Modulstruktur</h2>
-	<p class="section-intro">
-		Das Modul gliedert sich in eine kompakte Inputphase und eine anschließende Projektphase — beide Bereiche
-		werden in den nächsten Goldfish-Slices mit Inhalten gefüllt.
+	<p class="section-intro text-muted">
+		Zuerst kompakt lernen, dann anwenden: Die Inputphase bereitet dich Schritt für Schritt auf dein Projekt
+		vor.
 	</p>
 	<div class="phase-grid">
 		{#each phases as phase (phase.href)}
-			<article class="phase-card">
+			<article class="phase-card {phase.accent}">
 				<h3>{phase.title}</h3>
 				<p class="phase-meta">{phase.duration}</p>
 				<p>{phase.summary}</p>
-				<a class="card-link" href={phase.href}>Zur {phase.title} →</a>
+				<a class="link-arrow" href={phase.href}>Zur {phase.title} →</a>
 			</article>
 		{/each}
 	</div>
 </section>
 
-<section class="panel links" aria-labelledby="explore-title">
+<section class="glass-panel links" aria-labelledby="explore-title">
 	<h2 id="explore-title">Weiter erkunden</h2>
 	<ul class="link-list">
 		<li><a href="/frameworks">Frameworks &amp; theoretische Basis</a></li>
-		<li><a href="/anwendungsfelder">Anwendungsfelder für Projektarbeit</a></li>
+		<li><a href="/anwendungsfelder">Anwendungsfelder für dein Projekt</a></li>
 	</ul>
 </section>
 
 <style>
 	.hero {
 		margin-bottom: 2.5rem;
-		max-width: 44rem;
+		max-width: 46rem;
+		padding: 0.5rem 0 0.25rem;
 	}
 
 	.eyebrow {
-		margin: 0 0 0.75rem;
-		font-size: 0.8125rem;
-		font-weight: 600;
+		margin: 0 0 0.85rem;
+		font-size: 0.78rem;
+		font-weight: 700;
 		text-transform: uppercase;
-		letter-spacing: 0.08em;
-		color: var(--color-muted);
+		letter-spacing: 0.1em;
+		color: var(--color-accent-strong);
 	}
 
 	.hero h1 {
 		margin: 0 0 1rem;
-		font-size: clamp(2.25rem, 6vw, 3rem);
-		line-height: 1.08;
+		font-size: clamp(2.1rem, 6vw, 3.25rem);
+		line-height: 1.05;
 		letter-spacing: -0.03em;
+		background: var(--gradient-brand);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 
 	.hero-lead {
-		margin: 0;
+		margin: 0 0 1.35rem;
 		font-size: 1.125rem;
 		line-height: 1.65;
 		color: var(--color-muted);
 	}
 
-	.panel {
-		margin-bottom: 2.5rem;
-		padding: 1.5rem;
-		background: var(--color-surface);
-		border: 1px solid var(--color-border);
-		border-radius: 0.75rem;
+	.cta {
+		display: inline-flex;
+		align-items: center;
+		padding: 0.65rem 1.15rem;
+		border-radius: 999px;
+		background: var(--gradient-brand);
+		color: #fff;
+		font-weight: 700;
+		text-decoration: none;
+		box-shadow: var(--shadow-md);
+		transition: transform var(--motion-fast), box-shadow var(--motion-fast);
 	}
 
-	.panel h2 {
+	.cta:hover {
+		transform: translateY(-2px);
+		box-shadow: var(--shadow-lg);
+		color: #fff;
+		text-decoration: none;
+	}
+
+	.glass-panel {
+		margin-bottom: 1.35rem;
+	}
+
+	.glass-panel h2 {
 		margin: 0 0 1rem;
-		font-size: 1.375rem;
+		font-size: 1.35rem;
 	}
 
 	.shift-list {
 		margin: 0;
 		padding-left: 1.25rem;
 		display: grid;
-		gap: 0.5rem;
+		gap: 0.55rem;
 	}
 
 	.section-intro {
 		margin: 0 0 1.25rem;
-		color: var(--color-muted);
 		max-width: 40rem;
 	}
 
@@ -135,10 +157,25 @@
 	}
 
 	.phase-card {
-		padding: 1rem 1.1rem;
-		border-radius: 0.5rem;
-		background: var(--color-surface-elevated);
+		padding: 1.15rem 1.2rem;
+		border-radius: var(--radius-md);
+		background: var(--color-surface-solid);
 		border: 1px solid var(--color-border);
+		box-shadow: var(--shadow-sm);
+		transition: transform var(--motion-fast), box-shadow var(--motion-fast);
+	}
+
+	.phase-card:hover {
+		transform: translateY(-3px);
+		box-shadow: var(--shadow-md);
+	}
+
+	.phase-card.violet {
+		border-top: 3px solid #7c3aed;
+	}
+
+	.phase-card.teal {
+		border-top: 3px solid #14b8a6;
 	}
 
 	.phase-card h3 {
@@ -149,7 +186,7 @@
 	.phase-meta {
 		margin: 0 0 0.75rem;
 		font-size: 0.8125rem;
-		font-weight: 600;
+		font-weight: 700;
 		color: var(--color-accent-strong);
 	}
 
@@ -157,21 +194,14 @@
 		margin: 0 0 1rem;
 		font-size: 0.9375rem;
 		line-height: 1.55;
-	}
-
-	.card-link {
-		font-weight: 600;
-		text-decoration: none;
-	}
-
-	.card-link:hover {
-		text-decoration: underline;
+		color: var(--color-muted);
 	}
 
 	.link-list {
 		margin: 0;
 		padding-left: 1.25rem;
 		display: grid;
-		gap: 0.35rem;
+		gap: 0.45rem;
+		font-weight: 600;
 	}
 </style>

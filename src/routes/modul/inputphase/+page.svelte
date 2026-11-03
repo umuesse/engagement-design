@@ -1,13 +1,7 @@
 <script lang="ts">
+	import { inputDays } from '#lib/data/inputphase';
+	import InputDayCard from '#lib/components/InputDayCard.svelte';
 	import PageIntro from '#lib/components/PageIntro.svelte';
-
-	const days = [
-		{ day: 1, topic: 'Was ist Engagement Design? — Abgrenzung, Begriffsklärung, Überblick' },
-		{ day: 2, topic: 'Motivationspsychologie — SDT, Flow, ARCS' },
-		{ day: 3, topic: 'Frameworks — Octalysis, HEXAD, MDA, Fogg' },
-		{ day: 4, topic: 'Ethik und kritische Perspektive — Dark Patterns, Meaningful Gamification' },
-		{ day: 5, topic: 'Methoden und Prozess — HCD, Experience Design, Projektübersicht' }
-	];
 </script>
 
 <svelte:head>
@@ -15,69 +9,58 @@
 </svelte:head>
 
 <PageIntro
-	title="Inputphase"
-	lead="Vier bis fünf Tage theoretische und konzeptionelle Grundlagen. Die detaillierten Inhalte pro Tag werden in Goldfish 2 ausgearbeitet."
+	tag="4–5 Tage · Inputphase"
+	title="Dein Einstieg in Engagement Design"
+	lead="Fünf kompakte Lerntage — von Begriffsklärung über Motivation und Frameworks bis zu Ethik und Projektstart. Pro Tag findest du ein Thema und konkrete Lernziele."
 />
 
-<p>
-	Diese Seite skizziert bereits die geplante Tagesstruktur aus der Modulplanung — als Orientierung für
-	Studierende und zur Abstimmung der Inhalte.
-</p>
+<section class="timeline-section" aria-labelledby="timeline-title">
+	<h2 id="timeline-title" class="sr-only">Tagesplan Inputphase</h2>
+	<p class="timeline-intro text-muted">
+		Nutze die Timeline als Orientierung in der Veranstaltung und zum Selbststudium. Die Reihenfolge baut
+		logisch aufeinander auf — Tag 5 bereitet direkt auf die Projektphase vor.
+	</p>
 
-<table class="schedule">
-	<caption class="sr-only">Geplante Themen pro Tag in der Inputphase</caption>
-	<thead>
-		<tr>
-			<th scope="col">Tag</th>
-			<th scope="col">Thema</th>
-		</tr>
-	</thead>
-	<tbody>
-		{#each days as row (row.day)}
-			<tr>
-				<td>{row.day}</td>
-				<td>{row.topic}</td>
-			</tr>
+	<div class="timeline">
+		{#each inputDays as day, index (day.day)}
+			<InputDayCard day={day} isLast={index === inputDays.length - 1} />
 		{/each}
-	</tbody>
-</table>
+	</div>
+</section>
 
-<p class="next">
-	Als Nächstes: <a href="/frameworks">Frameworks-Bereiche</a> und Vertiefung in Goldfish 2–3.
-</p>
+<section class="glass-panel next-step" aria-labelledby="next-title">
+	<h2 id="next-title">Bereit für die Praxis?</h2>
+	<p>
+		Nach der Inputphase geht es in die eigenständige Projektphase — Frameworks anwenden, kritisch reflektieren,
+		Ergebnisse dokumentieren.
+	</p>
+	<a class="link-arrow" href="/modul/projektphase">Zur Projektphase →</a>
+</section>
 
 <style>
-	p {
+	.timeline-section {
+		margin-bottom: 2rem;
+	}
+
+	.timeline-intro {
 		max-width: 42rem;
-		line-height: 1.6;
+		margin: 0 0 1.5rem;
+		font-size: 1rem;
 	}
 
-	.schedule {
-		width: 100%;
-		border-collapse: collapse;
-		margin: 1.5rem 0;
-		font-size: 0.9375rem;
+	.timeline {
+		display: grid;
+		gap: 0.25rem;
 	}
 
-	th,
-	td {
-		border: 1px solid var(--color-border);
-		padding: 0.65rem 0.75rem;
-		text-align: left;
-		vertical-align: top;
+	.next-step h2 {
+		margin: 0 0 0.5rem;
+		font-size: 1.25rem;
 	}
 
-	th {
-		background: var(--color-surface-elevated);
-		font-weight: 650;
-	}
-
-	td:first-child {
-		width: 4rem;
-		font-weight: 600;
-	}
-
-	.next {
+	.next-step p {
+		margin: 0 0 1rem;
+		max-width: 38rem;
 		color: var(--color-muted);
 	}
 </style>
