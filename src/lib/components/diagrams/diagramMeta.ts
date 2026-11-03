@@ -16,6 +16,11 @@ export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 		longDescription:
 			'Drei Säulen (Kompetenz, Autonomie, Eingebundenheit) mit Kopf und mehrzeiligem Kurztext in der Spalte; oben Verbindungslinie. Breit nebeneinander, schmal untereinander gestapelt.'
 	},
+	ramp: {
+		caption: 'RAMP nach Pink (2009/2011) — Relatedness, Autonomy, Mastery, Purpose.',
+		longDescription:
+			'Vier Säulen mit deutschen Titeln und englischen Untertiteln (Relatedness, Autonomy, Mastery, Purpose), Kurztext in der Spalte, Verbindungslinie oben. Breit nebeneinander, schmal gestapelt.'
+	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',
 		longDescription:
