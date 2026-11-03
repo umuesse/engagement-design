@@ -49,6 +49,8 @@ export type ContentBlock =
 export type FrameworkArticleSection = {
 	diagramIds?: FrameworkDiagramId[];
 	blocks: ContentBlock[];
+	/** Prosa vor der Diagramm-Karte (Standard: Diagramm zuerst) */
+	blocksBeforeDiagram?: boolean;
 };
 
 export type FrameworkArticleContent = {

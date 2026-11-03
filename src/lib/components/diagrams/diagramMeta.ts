@@ -12,8 +12,7 @@ export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 			'Horizontales Säulenlayout: sechs Stufen (Amotivation, externe, introjizierte, identifizierte und integrierte Regulierung, intrinsische Motivation) mit Kurztext pro Stufe; Klammer „Extrinsische Motivation“ über vier mittlere Stufen; Achse von nicht selbstbestimmt nach selbstbestimmt; Pfeil für steigende Autonomie und Internalisierung.'
 	},
 	'sdt-needs': {
-		caption:
-			'Die drei Grundbedürfnisse nach Deci & Ryan — Autonomie, Kompetenz und Eingebundenheit.',
+		caption: 'Die drei Grundbedürfnisse nach Deci & Ryan (2000).',
 		longDescription:
 			'Drei Säulen (Kompetenz, Autonomie, Eingebundenheit) mit Kopf und mehrzeiligem Kurztext in der Spalte; oben Verbindungslinie. Breit nebeneinander, schmal untereinander gestapelt.'
 	},

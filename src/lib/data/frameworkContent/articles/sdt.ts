@@ -88,6 +88,7 @@ export const sdt: FrameworkArticleContent = {
 		},
 		{
 			diagramIds: ['sdt-needs'],
+			blocksBeforeDiagram: true,
 			blocks: [
 				{
 					type: 'callout',
