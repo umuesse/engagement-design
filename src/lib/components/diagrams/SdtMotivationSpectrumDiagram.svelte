@@ -1,36 +1,49 @@
-<svg viewBox="0 0 480 168" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+<svg viewBox="0 0 560 232" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
 	<defs>
-		<linearGradient id="sdt-spectrum-grad" x1="0%" y1="0%" x2="100%" y2="0%">
-			<stop offset="0%" stop-color="#5b21b6" />
-			<stop offset="45%" stop-color="#7c3aed" />
-			<stop offset="55%" stop-color="#a78bfa" />
-			<stop offset="100%" stop-color="#64748b" />
+		<linearGradient id="sdt-reg-axis" x1="0%" y1="0%" x2="100%" y2="0%">
+			<stop offset="0%" stop-color="#94a3b8" />
+			<stop offset="100%" stop-color="#5b21b6" />
 		</linearGradient>
-		<marker id="sdt-spectrum-arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
-			<path d="M0,0 L8,4 L0,8 Z" fill="var(--color-muted)" />
-		</marker>
 	</defs>
-	<text x="240" y="22" text-anchor="middle" class="diagram-title">Motivationsspektrum</text>
-	<text x="32" y="52" class="diagram-label">Intrinsisch</text>
-	<text x="448" y="52" text-anchor="end" class="diagram-label">Extrinsisch</text>
-	<text x="32" y="66" class="diagram-muted">Interesse, Bedeutung</text>
-	<text x="448" y="66" text-anchor="end" class="diagram-muted">Belohnungen, Druck</text>
-	<rect x="32" y="78" width="416" height="20" rx="10" fill="url(#sdt-spectrum-grad)" stroke="var(--color-border)" stroke-width="1.5" />
-	<line x1="32" y1="88" x2="448" y2="88" stroke="rgba(255,255,255,0.35)" stroke-width="1" stroke-dasharray="4 6" />
-	<circle cx="72" cy="88" r="7" fill="#fff" stroke="#5b21b6" stroke-width="2.5" />
-	<text x="72" y="118" text-anchor="middle" class="diagram-label">Engagement Design</text>
-	<text x="72" y="132" text-anchor="middle" class="diagram-muted">Zielrichtung</text>
-	<circle cx="408" cy="88" r="7" fill="#fff" stroke="#64748b" stroke-width="2.5" />
-	<text x="408" y="118" text-anchor="middle" class="diagram-label">PBL / Gamification</text>
-	<text x="408" y="132" text-anchor="middle" class="diagram-muted">oft hier verankert</text>
-	<path
-		d="M 408 102 L 408 148 L 120 148"
-		fill="none"
-		stroke="var(--color-muted)"
-		stroke-width="1.5"
-		stroke-dasharray="5 4"
-		marker-end="url(#sdt-spectrum-arrow)"
-		opacity="0.85"
-	/>
-	<text x="264" y="162" text-anchor="middle" class="diagram-muted">Verschiebung: von äußeren Anreizen zu selbst gewählter Bedeutung</text>
+	<text x="280" y="20" text-anchor="middle" class="diagram-title">Kontinuum der Motivationsregulation (SDT)</text>
+	<text x="28" y="40" class="diagram-muted">← Fremdbestimmt</text>
+	<text x="532" y="40" text-anchor="end" class="diagram-muted">Selbstbestimmt →</text>
+
+	<!-- Amotivation -->
+	<rect x="28" y="52" width="72" height="32" rx="8" fill="#cbd5e1" stroke="var(--color-border)" stroke-width="1.5" />
+	<!-- Extrinsic group background -->
+	<rect x="100" y="48" width="288" height="40" rx="6" fill="rgba(124,58,237,0.07)" stroke="var(--color-border)" stroke-width="1" />
+	<text x="244" y="44" text-anchor="middle" class="diagram-muted">Extrinsische Regulierung (steigende Internalisierung)</text>
+	<!-- 4 extrinsic segments -->
+	<rect x="100" y="52" width="72" height="32" fill="#64748b" stroke="var(--color-border)" stroke-width="1" />
+	<rect x="172" y="52" width="72" height="32" fill="#475569" stroke="var(--color-border)" stroke-width="1" />
+	<rect x="244" y="52" width="72" height="32" fill="#6366f1" stroke="var(--color-border)" stroke-width="1" opacity="0.95" />
+	<rect x="316" y="52" width="72" height="32" fill="#7c3aed" stroke="var(--color-border)" stroke-width="1" />
+	<!-- Intrinsic -->
+	<rect x="388" y="52" width="144" height="32" rx="8" fill="#5b21b6" stroke="#5b21b6" stroke-width="1.5" />
+
+	<!-- Segment labels -->
+	<text x="64" y="72" text-anchor="middle" class="diagram-label" fill="#334155">Amotivation</text>
+	<text x="136" y="68" text-anchor="middle" class="diagram-label" fill="#f8fafc">Extern</text>
+	<text x="136" y="80" text-anchor="middle" class="diagram-muted" fill="#e2e8f0">Regulierung</text>
+	<text x="208" y="68" text-anchor="middle" class="diagram-label" fill="#f8fafc">Introjiziert</text>
+	<text x="208" y="80" text-anchor="middle" class="diagram-muted" fill="#e2e8f0">Regulierung</text>
+	<text x="280" y="68" text-anchor="middle" class="diagram-label" fill="#f8fafc">Identifiziert</text>
+	<text x="280" y="80" text-anchor="middle" class="diagram-muted" fill="#e2e8f0">Regulierung</text>
+	<text x="352" y="68" text-anchor="middle" class="diagram-label" fill="#f8fafc">Integriert</text>
+	<text x="352" y="80" text-anchor="middle" class="diagram-muted" fill="#e2e8f0">Regulierung</text>
+	<text x="460" y="72" text-anchor="middle" class="diagram-label" fill="#faf5ff">Intrinsische Motivation</text>
+
+	<!-- Continuum arrow -->
+	<line x1="40" y1="96" x2="520" y2="96" stroke="url(#sdt-reg-axis)" stroke-width="3" stroke-linecap="round" />
+	<polygon points="520,96 512,92 512,100" fill="#5b21b6" />
+	<text x="280" y="112" text-anchor="middle" class="diagram-muted">Zunehmende Autonomie und Annäherung an intrinsische Qualität</text>
+
+	<!-- ED / PBL orientation (compact) -->
+	<circle cx="148" cy="138" r="5" fill="#fff" stroke="#64748b" stroke-width="2" />
+	<text x="148" y="156" text-anchor="middle" class="diagram-muted">PBL / Gamification</text>
+	<text x="148" y="168" text-anchor="middle" class="diagram-muted">oft extern · introjiziert</text>
+	<circle cx="412" cy="138" r="5" fill="#fff" stroke="#5b21b6" stroke-width="2" />
+	<text x="412" y="156" text-anchor="middle" class="diagram-muted">Engagement Design</text>
+	<text x="412" y="168" text-anchor="middle" class="diagram-muted">Richtung identifiziert → intrinsisch</text>
 </svg>
