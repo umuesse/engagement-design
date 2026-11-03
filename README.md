@@ -1,56 +1,52 @@
-# sv
+# Engagement Design — Modulwebsite
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+Studierendenorientierte **SvelteKit**-Website für das Bachelor-Modul **Engagement Design (ED)** — Nachfolger von Gamification (GAM). Die Site bündelt Modulüberblick, Inputphase, Framework-Vertiefungen, Anwendungsfelder und Projektphase in einer modernen, zugänglichen Oberfläche (Deutsch).
 
-## Creating a project
+Inhaltliche Grundlage: Modulplanung GAM → ED (Inputphase, Frameworks, Anwendungsfelder, Projektphase).
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Voraussetzungen
 
-```sh
-# create a new project
-npx sv create my-app
-```
+- [Node.js](https://nodejs.org/) (LTS empfohlen, z. B. 20+)
+- npm (im Projekt mitgeliefert)
 
-To recreate this project with the same configuration:
+## Installation
 
 ```sh
-# recreate this project
-npx sv@1.2.0 create --template minimal --types ts --no-install .
+cd engagement-design
+npm install
 ```
 
-## Adding features
+## Entwicklung
 
-Add features to your project with `sv add`:
-
-```sh
-npx sv add
-```
-
-For example, to add Tailwind CSS:
-
-```sh
-npx sv add tailwindcss
-```
-
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+Lokalen Dev-Server starten (Standard: [http://localhost:5173](http://localhost:5173)):
 
 ```sh
 npm run dev
 
-# or start the server and open the app in a new browser tab
+# Browser automatisch öffnen
 npm run dev -- --open
 ```
 
-## Building
-
-To create a production version of your app:
+## Production Build
 
 ```sh
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+Für Deployment ggf. einen [SvelteKit-Adapter](https://svelte.dev/docs/kit/adapters) konfigurieren (`@sveltejs/adapter-auto` ist voreingestellt).
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Projektstruktur (kurz)
+
+- `src/routes/` — Seiten (Start, Modul, Frameworks, Anwendungsfelder)
+- `src/lib/data/` — Inhalte (Inputphase, Framework-Artikel, Anwendungsfelder)
+- `src/lib/components/` — Layout, Navigation, UI-Bausteine
+
+## Technik
+
+- [SvelteKit 3](https://kit.svelte.dev/) · [Svelte 5](https://svelte.dev/)
+- TypeScript
+
+## Lizenz
+
+Privates Lehrprojekt — Nutzung im Kontext des ED-Moduls.
