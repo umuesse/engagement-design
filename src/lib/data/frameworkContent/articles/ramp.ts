@@ -149,7 +149,7 @@ export const ramp: FrameworkArticleContent = {
             "<strong>Korrumpierung:</strong> Belohnungen können inneres Interesse verdrängen — das Handeln dient der Auszeichnung, nicht mehr der Aufgabe.",
             '<strong>Leistungsabfall:</strong> Bei insight-/kreativen Aufgaben (z. B. Kerzenaufgabe, siehe oben) können versprochene Belohnungen seltener und langsamere Lösungen bedeuten (<a href="#ref-glucksberg-1962">Glucksberg, 1962</a>) — unabhängig vom SDT-Korrumpierungseffekt.',
             "<strong>Ethische Verengung:</strong> Kurzfristige Kennzahlen und starke Anreize können zu Ausweichen, Schönrechnen oder moralischem Blindflug beitragen — Verantwortung braucht klare Guardrails.",
-            "<strong>Sucht nach dem nächsten Carrot:</strong> Wenn nur der externe Anreis wechselt, fehlt nachhaltige Motivation — es entsteht ein Teufelskreis aus „Was bekomme ich dafür?“",
+            "<strong>Sucht nach dem nächsten Carrot:</strong> Wenn nur der externe Anreiz wechselt, fehlt nachhaltige Motivation — es entsteht ein Teufelskreis aus „Was bekomme ich dafür?“",
           ],
         },
       ],
