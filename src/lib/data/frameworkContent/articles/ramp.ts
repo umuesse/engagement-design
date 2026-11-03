@@ -103,7 +103,7 @@ export const ramp: FrameworkArticleContent = {
         },
         {
           type: "p",
-          text: "Das ist das empirische Ergebnis, das Pink für kognitiv-kreative Arbeit zitiert: Extrinsische Anreize können hier die <strong>Leistung senken</strong>, nicht steigern — vermutlich, weil Aufmerksamkeit auf die Belohnung statt auf flexible Umstrukturierung geht. Das ist ein Leistungsbefund (anders als SDT-Korrumpierung, die inneres Interesse meint). Für Engagement Design: Anreize zuerst nach <strong>Aufgabentyp</strong> sortieren — nicht pauschal „mehr Belohnung“.",
+          text: 'Vermutlich lenkt die Belohnung die Aufmerksamkeit von der flexiblen Umstrukturierung ab — ein <strong>Leistungsbefund</strong>, nicht dasselbe wie SDT-Korrumpierung (inneres Interesse). Für Engagement Design: Anreize zuerst nach <strong>Aufgabentyp</strong> sortieren — nicht pauschal „mehr Belohnung“.',
         },
         {
           type: "callout",
