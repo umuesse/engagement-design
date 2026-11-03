@@ -13,9 +13,9 @@ export const diagramMeta: Record<FrameworkDiagramId, DiagramMeta> = {
 	},
 	'sdt-needs': {
 		caption:
-			'Die drei Grundbedürfnisse — Autonomie, Kompetenz und soziale Eingebundenheit — stützen intrinsische Motivation (Ryan & Deci).',
+			'Die drei Grundbedürfnisse nach Deci & Ryan — Autonomie, Kompetenz und Eingebundenheit.',
 		longDescription:
-			'Dreiecksanordnung der drei psychologischen Grundbedürfnisse mit Pfeilen zur zentralen Ellipse „Intrinsische Motivation“; gestricheltes Dreieck verbindet die Bedürfnisse als zusammengehöriges System.'
+			'Drei Säulen von links nach rechts: Kompetenz, Autonomie, Eingebundenheit; jeweils farbiger Kopfbereich mit Bedürfnisname und hellerer Textbereich mit Kurzdefinition; oben gemeinsame Verbindungslinie.'
 	},
 	flow: {
 		caption: 'Flow-Kanal: Balance aus Herausforderung (Challenge) und Können (Skill).',

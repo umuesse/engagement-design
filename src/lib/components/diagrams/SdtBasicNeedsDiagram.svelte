@@ -1,65 +1,60 @@
 <svg
-	viewBox="0 0 400 248"
+	viewBox="0 0 408 132"
 	width="100%"
 	preserveAspectRatio="xMidYMid meet"
 	xmlns="http://www.w3.org/2000/svg"
 	aria-hidden="true"
 >
-	<defs>
-		<marker id="sdt-needs-arrow" markerWidth="7" markerHeight="7" refX="6" refY="3.5" orient="auto">
-			<path d="M0,0 L7,3.5 L0,7 Z" fill="var(--diagram-segment-border)" />
-		</marker>
-	</defs>
-
-	<polygon
-		points="200,36 48,200 352,200"
-		fill="none"
-		stroke="var(--diagram-segment-border)"
-		stroke-width="1.5"
-		stroke-dasharray="4 3"
-		opacity="0.65"
-	/>
-
-	<g>
-		<circle cx="200" cy="52" r="34" class="diagram-segment diagram-segment-identified" stroke-width="2" />
-		<text x="200" y="48" text-anchor="middle" class="diagram-label">Autonomie</text>
-		<text x="200" y="62" text-anchor="middle" class="diagram-desc">Wahlfreiheit</text>
-	</g>
-	<g>
-		<circle cx="72" cy="200" r="34" class="diagram-segment diagram-segment-external" stroke-width="2" />
-		<text x="72" y="196" text-anchor="middle" class="diagram-label">Kompetenz</text>
-		<text x="72" y="210" text-anchor="middle" class="diagram-desc">Wachstum</text>
-	</g>
-	<g>
-		<circle cx="328" cy="200" r="34" class="diagram-segment diagram-segment-integrated" stroke-width="2" />
-		<text x="328" y="192" text-anchor="middle" class="diagram-label">Soziale</text>
-		<text x="328" y="206" text-anchor="middle" class="diagram-label">Eingebundenheit</text>
-		<text x="328" y="218" text-anchor="middle" class="diagram-desc">Zugehörigkeit</text>
-	</g>
-
+	<!-- Verbindung oben (Baum) -->
 	<path
-		d="M 200 86 L 200 118"
+		d="M 70 14 L 338 14 M 70 14 L 70 28 M 204 14 L 204 28 M 338 14 L 338 28"
 		fill="none"
 		stroke="var(--diagram-segment-border)"
-		stroke-width="2.5"
-		marker-end="url(#sdt-needs-arrow)"
-	/>
-	<path
-		d="M 98 178 Q 140 150 168 138"
-		fill="none"
-		stroke="var(--diagram-segment-border)"
-		stroke-width="2.5"
-		marker-end="url(#sdt-needs-arrow)"
-	/>
-	<path
-		d="M 302 178 Q 260 150 232 138"
-		fill="none"
-		stroke="var(--diagram-segment-border)"
-		stroke-width="2.5"
-		marker-end="url(#sdt-needs-arrow)"
+		stroke-width="2"
+		stroke-linecap="round"
 	/>
 
-	<ellipse cx="200" cy="148" rx="78" ry="32" class="diagram-segment diagram-segment-intrinsic" stroke-width="2" />
-	<text x="200" y="144" text-anchor="middle" class="diagram-label-on-dark">Intrinsische</text>
-	<text x="200" y="160" text-anchor="middle" class="diagram-label-on-dark">Motivation</text>
+	{#each [
+		{
+			x: 16,
+			title: 'Kompetenz',
+			desc: ['Wirksam sein im Umgang', 'mit der Umwelt'],
+			headerFill: 'var(--diagram-segment-intrinsic)',
+			bodyFill: 'var(--diagram-segment-identified)'
+		},
+		{
+			x: 144,
+			title: 'Autonomie',
+			desc: ['Selbstbestimmung über den', 'eigenen Lebensweg'],
+			headerFill: '#433855',
+			bodyFill: 'var(--diagram-segment-introjected)'
+		},
+		{
+			x: 272,
+			title: 'Eingebundenheit',
+			desc: ['Nahe, vertrauensvolle', 'Beziehungen zu anderen'],
+			headerFill: 'var(--color-accent-alt)',
+			bodyFill: 'var(--diagram-segment-integrated)'
+		}
+	] as col (col.title)}
+		<g transform="translate({col.x}, 28)">
+			<rect x="0" y="0" width="120" height="30" rx="8" fill={col.headerFill} stroke="var(--diagram-segment-border)" stroke-width="1.5" />
+			<text x="60" y="20" text-anchor="middle" class="diagram-label-on-dark">{col.title}</text>
+			<rect
+				x="0"
+				y="30"
+				width="120"
+				height="74"
+				rx="8"
+				fill={col.bodyFill}
+				stroke="var(--diagram-segment-border)"
+				stroke-width="1.5"
+			/>
+			<text x="60" y="54" text-anchor="middle" class="diagram-desc">
+				{#each col.desc as line, i (line)}
+					<tspan x="60" dy={i === 0 ? 0 : 13}>{line}</tspan>
+				{/each}
+			</text>
+		</g>
+	{/each}
 </svg>

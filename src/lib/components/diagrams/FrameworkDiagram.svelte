@@ -105,6 +105,11 @@
 		overflow: visible;
 	}
 
+	.framework-diagram.sdt-needs .diagram-frame :global(.diagram-label-on-dark) {
+		font-size: 12px;
+		font-weight: 700;
+	}
+
 	.diagram-frame :global(.diagram-label) {
 		font-family: var(--font-sans);
 		font-size: 11px;
