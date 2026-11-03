@@ -4,6 +4,8 @@ Studierendenorientierte **SvelteKit**-Website für das Bachelor-Modul **Engageme
 
 Inhaltliche Grundlage: Modulplanung GAM → ED (Inputphase, Frameworks, Anwendungsfelder, Projektphase).
 
+**Mitwirken:** Änderungen bitte per Feature-Branch und Pull Request — siehe [CONTRIBUTING.md](./CONTRIBUTING.md).
+
 ## Voraussetzungen
 
 - [Node.js](https://nodejs.org/) (LTS empfohlen, z. B. 20+)
