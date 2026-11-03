@@ -92,11 +92,11 @@ export const sdt: FrameworkArticleContent = {
 				{ type: 'h2', text: 'Die drei Grundbedürfnisse' },
 				{
 					type: 'p',
-					text: 'SDT geht davon aus, dass Menschen von Natur aus neugierig sind und sich einbringen wollen — wenn der Kontext das erlaubt. Dafür müssen drei psychologische Grundbedürfnisse erfüllt sein: Autonomie, Kompetenz und soziale Eingebundenheit. Fehlt eines davon, sinkt oft die Qualität der Motivation — unabhängig davon, wie attraktiv ein Angebot wirkt.'
+					text: 'Deci & Ryan fassen Motivation nicht nur als Kontinuum der Regulierung, sondern verankern sie in drei psychologischen Grundbedürfnissen: <strong>Autonomie</strong> (Handeln als freiwillig und stimmig erleben), <strong>Kompetenz</strong> (wirksam werden und an passenden Herausforderungen wachsen) und <strong>soziale Eingebundenheit</strong> (sich verbunden und wertgeschätzt fühlen). Sie gelten als universelle Voraussetzungen für Wohlbefinden, Lernen und die Entwicklung innerer Motivation — nicht als extrinsische „Belohnungen“, die man einzeln verteilt.'
 				},
 				{
 					type: 'p',
-					text: 'Die Grafik unten fasst die Bedürfnisse als gleichwertige Säulen zusammen; in der Praxis wirken sie zusammen und verstärken sich gegenseitig.'
+					text: 'In der Bedürfnisbefriedigung geht es um den <em>Kontext</em>: Unterstützt ein Setting Wahlmöglichkeiten und Begründungen, klares Feedback und sinnvolle Herausforderung sowie Beziehungen auf Augenhöhe, steigt die Chance, dass Menschen sich freiwillig engagieren und Regeln internalisieren. Untergräbt der Kontext ein Bedürfnis dauerhaft — etwa durch erzwungene Teilnahme, sinnlose Hürden oder Isolation — leidet meist auch die Qualität der Motivation; die drei Bedürfnisse wirken in der Praxis zusammen.'
 				},
 				{
 					type: 'callout',
