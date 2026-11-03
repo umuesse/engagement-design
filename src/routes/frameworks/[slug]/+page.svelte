@@ -4,22 +4,22 @@
 	import type { PageProps } from './$types';
 
 	let { data }: PageProps = $props();
-	const content = $derived(data.content);
+	const article = $derived(data.content);
 </script>
 
 <svelte:head>
-	<title>{content.title} — Engagement Design</title>
-	<meta name="description" content={content.metaDescription} />
+	<title>{article.title} — Engagement Design</title>
+	<meta name="description" content={article.metaDescription} />
 </svelte:head>
 
 <FrameworkArticle
-	tag={content.tag}
-	title={content.title}
-	lead={content.lead}
-	keyTerms={content.keyTerms}
-	sources={content.sources}
+	tag={article.tag}
+	title={article.title}
+	lead={article.lead}
+	keyTerms={article.keyTerms}
+	sources={article.sources}
 >
-	{#snippet content()}
-		<FrameworkContentBlocks blocks={content.blocks} />
+	{#snippet articleBody()}
+		<FrameworkContentBlocks blocks={article.blocks} />
 	{/snippet}
 </FrameworkArticle>

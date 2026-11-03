@@ -20,7 +20,7 @@
 		sources?: Source[];
 		backHref?: string;
 		backLabel?: string;
-		content: Snippet;
+		articleBody: Snippet;
 		sidebar?: Snippet;
 	}
 
@@ -32,7 +32,7 @@
 		sources = [],
 		backHref = '/frameworks',
 		backLabel = 'Zurück zum Framework-Hub',
-		content,
+		articleBody,
 		sidebar
 	}: Props = $props();
 </script>
@@ -56,7 +56,7 @@
 
 	<div class="article-grid" class:has-sidebar={!!sidebar || keyTerms.length > 0}>
 		<div class="article-main">
-			{@render content()}
+			{@render articleBody()}
 
 			{#if sources.length > 0}
 				<section class="sources glass-panel" aria-labelledby="sources-title">
