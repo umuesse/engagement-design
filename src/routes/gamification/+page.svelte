@@ -1,9 +1,11 @@
 <script lang="ts">
 	import PageIntro from '#lib/components/PageIntro.svelte';
+	import GamificationTopicList from '#lib/components/gamification/GamificationTopicList.svelte';
 	import {
 		gamificationFrameworkLinks,
 		gamificationMeta,
-		gamificationSubsections
+		gamificationSubsections,
+		gamificationTopicItems
 	} from '#lib/data/gamificationSection';
 </script>
 
@@ -13,6 +15,14 @@
 </svelte:head>
 
 <PageIntro tag={gamificationMeta.tag} title={gamificationMeta.title} lead={gamificationMeta.lead} />
+
+<section class="glass-panel topic-hub" aria-labelledby="gamification-topics-title">
+	<h2 id="gamification-topics-title">Gamification-Frameworks &amp; Vertiefungen</h2>
+	<p class="section-intro text-muted">
+		Eigenständige Artikel in diesem Bereich — getrennt von der allgemeinen <a href="/frameworks">Framework-Übersicht</a>.
+	</p>
+	<GamificationTopicList items={gamificationTopicItems} />
+</section>
 
 {#each gamificationSubsections as section (section.id)}
 	<section class="glass-panel content-section" aria-labelledby="{section.id}-title">
@@ -53,6 +63,16 @@
 </section>
 
 <style>
+	.topic-hub {
+		margin-bottom: 1.25rem;
+	}
+
+	.topic-hub h2 {
+		margin: 0 0 0.5rem;
+		font-size: 1.25rem;
+		color: var(--color-text);
+	}
+
 	.content-section {
 		margin-bottom: 1.25rem;
 	}
