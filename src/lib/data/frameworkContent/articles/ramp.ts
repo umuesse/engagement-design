@@ -119,7 +119,7 @@ export const ramp: FrameworkArticleContent = {
         },
         {
           type: "p",
-          text: "<strong>Relatedness (Verbundenheit)</strong> bleibt ausdrücklich im Modell — RAMP ersetzt Beziehung nicht durch Sinn. <strong>Mastery</strong> entspricht der SDT-<strong>Kompetenz</strong>. Purpose verschiebt den Blick auf narrative und gesellschaftliche Bedeutung: Warum lohnt sich diese Anstrengung über den unmittelbaren Output hinaus?",
+          text: 'Vier Säulen im Überblick (<a href="#ref-pink-2011">Pink, 2011</a>): <strong>Relatedness (Verbundenheit)</strong> — Zugehörigkeit und Beziehung; RAMP ersetzt sie nicht durch Sinn. <strong>Autonomy (Autonomie)</strong> — parallel zur SDT-<strong>Autonomie</strong>: selbstgesteuert handeln, wenn Wahlmöglichkeiten echt und nachvollziehbar sind. <strong>Mastery (Meisterschaft)</strong> — entspricht der SDT-<strong>Kompetenz</strong>, wirksam werden an passenden Herausforderungen. <strong>Purpose (Sinn)</strong> — narrative und gesellschaftliche Bedeutung: Warum lohnt sich die Anstrengung über den unmittelbaren Output hinaus?',
         },
         {
           type: "p",
