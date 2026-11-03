@@ -41,6 +41,12 @@ export const frameworkGroups: FrameworkGroup[] = [
 				'SDT',
 				'Autonomie, Kompetenz, Eingebundenheit — Kontinuum der Motivationsregulation nach Deci & Ryan.'
 			),
+			item(
+				'ramp',
+				'RAMP (Drive)',
+				'RAMP',
+				'Verbundenheit, Autonomie, Meisterschaft, Sinn — Pinks Drive-Modell im Anschluss an SDT.'
+			),
 			item('flow', 'Flow Theory', 'Flow', 'Optimale Erfahrung zwischen Über- und Unterforderung.'),
 			item('arcs', 'ARCS-Modell', 'ARCS', 'Attention, Relevance, Confidence, Satisfaction — Motivation strukturieren.')
 		]

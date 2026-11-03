@@ -22,6 +22,7 @@ export type FrameworkKeyTerm = {
 export type FrameworkDiagramId =
 	| 'sdt-spectrum'
 	| 'sdt-needs'
+	| 'ramp'
 	| 'flow'
 	| 'arcs'
 	| 'octalysis'

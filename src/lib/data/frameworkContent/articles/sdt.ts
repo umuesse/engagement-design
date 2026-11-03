@@ -110,7 +110,7 @@ export const sdt: FrameworkArticleContent = {
 				{ type: 'h2', text: 'Relevanz für Engagement Design' },
 				{
 					type: 'p',
-					text: 'SDT ist Kompass statt Mechanik-Katalog: Menschen bleiben freiwillig, wenn sie sich kompetent, verbunden und selbstbestimmt fühlen — nicht wenn man sie nur aktiviert.'
+					text: 'SDT ist Kompass statt Mechanik-Katalog: Menschen bleiben freiwillig, wenn sie sich kompetent, verbunden und selbstbestimmt fühlen — nicht wenn man sie nur aktiviert. Für einen praxisnahen Kompass mit explizitem Sinn-Bezug siehe <a href="/frameworks/ramp">RAMP (Drive)</a>.'
 				}
 			]
 		}

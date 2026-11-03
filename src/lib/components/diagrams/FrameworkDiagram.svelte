@@ -14,6 +14,7 @@
 	import RecipeDiagram from './RecipeDiagram.svelte';
 	import SdtBasicNeedsDiagram from './SdtBasicNeedsDiagram.svelte';
 	import SdtMotivationSpectrumDiagram from './SdtMotivationSpectrumDiagram.svelte';
+	import RampPillarsDiagram from './RampPillarsDiagram.svelte';
 	import ServiceDesignDiagram from './ServiceDesignDiagram.svelte';
 	import type { Component } from 'svelte';
 
@@ -26,6 +27,7 @@
 	const components: Record<FrameworkDiagramId, Component> = {
 		'sdt-spectrum': SdtMotivationSpectrumDiagram,
 		'sdt-needs': SdtBasicNeedsDiagram,
+		ramp: RampPillarsDiagram,
 		flow: FlowDiagram,
 		arcs: ArcsDiagram,
 		octalysis: OctalysisDiagram,
@@ -50,6 +52,7 @@
 	class="framework-diagram glass-panel"
 	class:sdt-spectrum={id === 'sdt-spectrum'}
 	class:sdt-needs={id === 'sdt-needs'}
+	class:diagram-pillars={id === 'sdt-needs' || id === 'ramp'}
 	aria-labelledby={captionId}
 	aria-describedby={descriptionId}
 >
@@ -101,16 +104,16 @@
 	}
 
 	.framework-diagram.sdt-spectrum .diagram-frame :global(svg),
-	.framework-diagram.sdt-needs .diagram-frame :global(svg) {
+	.framework-diagram.diagram-pillars .diagram-frame :global(svg) {
 		max-width: 45rem;
 		min-width: min(100%, 20rem);
 	}
 
-	.framework-diagram.sdt-needs {
+	.framework-diagram.diagram-pillars {
 		overflow: visible;
 	}
 
-	.framework-diagram.sdt-needs .diagram-frame :global(.diagram-label-on-dark) {
+	.framework-diagram.diagram-pillars .diagram-frame :global(.diagram-label-on-dark) {
 		font-size: 12px;
 		font-weight: 700;
 	}
