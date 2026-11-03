@@ -43,6 +43,13 @@ export const methodItems: MethodItem[] = [
 		'Double Diamond',
 		'Problemraum erkunden und eingrenzen, dann Lösungsraum entwickeln — bevor Mechaniken im Vordergrund stehen.',
 		'Prozess & Innovation'
+	),
+	method(
+		'design-thinking',
+		'Design Thinking',
+		'Design Thinking',
+		'Empathie, Problemdefinition, Ideation, Prototyping und Test — iterativ und nutzerzentriert (d.school).',
+		'Prozess & Innovation'
 	)
 ];
 
