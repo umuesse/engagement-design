@@ -58,9 +58,9 @@
 <style>
 	.framework-diagram {
 		margin: 0 0 1.75rem;
-		padding: 1rem 1rem 0.85rem;
-		border: 1px solid var(--color-border);
+		padding: 1.25rem 1.25rem 1rem;
 		overflow: hidden;
+		box-sizing: border-box;
 	}
 
 	.framework-diagram.sdt-spectrum {

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import FrameworkDiagram from '#lib/components/diagrams/FrameworkDiagram.svelte';
+	import FrameworkDiagramList from '#lib/components/diagrams/FrameworkDiagramList.svelte';
 	import FrameworkArticle from '#lib/components/framework/FrameworkArticle.svelte';
 	import FrameworkContentBlocks from '#lib/components/framework/FrameworkContentBlocks.svelte';
 	import type { PageProps } from './$types';
@@ -21,9 +21,7 @@
 	sources={article.sources}
 >
 	{#snippet articleBody()}
-		{#each article.diagramIds as diagramId (diagramId)}
-			<FrameworkDiagram id={diagramId} />
-		{/each}
+		<FrameworkDiagramList ids={article.diagramIds} />
 		<FrameworkContentBlocks blocks={article.blocks} />
 	{/snippet}
 </FrameworkArticle>
