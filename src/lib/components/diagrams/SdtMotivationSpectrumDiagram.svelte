@@ -1,5 +1,5 @@
 <svg
-	viewBox="0 0 720 218"
+	viewBox="0 0 720 200"
 	width="100%"
 	preserveAspectRatio="xMidYMid meet"
 	xmlns="http://www.w3.org/2000/svg"
@@ -12,24 +12,23 @@
 		</linearGradient>
 	</defs>
 
-	<text x="360" y="26" text-anchor="middle" class="diagram-title">Kontinuum der Selbstbestimmung (SDT)</text>
-	<text x="20" y="48" class="diagram-muted">Nicht selbstbestimmt ←</text>
-	<text x="700" y="48" text-anchor="end" class="diagram-muted">→ Selbstbestimmt</text>
+	<text x="20" y="28" class="diagram-muted">Nicht selbstbestimmt ←</text>
+	<text x="700" y="28" text-anchor="end" class="diagram-muted">→ Selbstbestimmt</text>
 
 	<path
-		d="M 118 78 L 118 66 L 598 66 L 598 78"
+		d="M 118 58 L 118 46 L 598 46 L 598 58"
 		fill="none"
 		stroke="var(--diagram-segment-border)"
 		stroke-width="1.5"
 	/>
-	<text x="358" y="60" text-anchor="middle" class="diagram-label">Extrinsische Motivation</text>
+	<text x="358" y="40" text-anchor="middle" class="diagram-label">Extrinsische Motivation</text>
 
-	<rect x="20" y="82" width="88" height="24" rx="6" class="diagram-segment diagram-segment-amotivation" />
-	<rect x="118" y="82" width="115" height="24" class="diagram-segment diagram-segment-external" />
-	<rect x="233" y="82" width="115" height="24" class="diagram-segment diagram-segment-introjected" />
-	<rect x="348" y="82" width="115" height="24" class="diagram-segment diagram-segment-identified" />
-	<rect x="463" y="82" width="115" height="24" class="diagram-segment diagram-segment-integrated" />
-	<rect x="568" y="82" width="132" height="24" rx="6" class="diagram-segment diagram-segment-intrinsic" />
+	<rect x="20" y="62" width="88" height="24" rx="6" class="diagram-segment diagram-segment-amotivation" />
+	<rect x="118" y="62" width="115" height="24" class="diagram-segment diagram-segment-external" />
+	<rect x="233" y="62" width="115" height="24" class="diagram-segment diagram-segment-introjected" />
+	<rect x="348" y="62" width="115" height="24" class="diagram-segment diagram-segment-identified" />
+	<rect x="463" y="62" width="115" height="24" class="diagram-segment diagram-segment-integrated" />
+	<rect x="568" y="62" width="132" height="24" rx="6" class="diagram-segment diagram-segment-intrinsic" />
 
 	{#each [
 		{ cx: 64, title: ['Amotivation'], desc: ['Keine klare', 'motivationale Ausrichtung'] },
@@ -43,18 +42,18 @@
 			desc: ['Interesse und Befriedigung', 'in der Tätigkeit selbst']
 		}
 	] as col (col.cx)}
-		<text x={col.cx} y="128" text-anchor="middle" class="diagram-label">
+		<text x={col.cx} y="108" text-anchor="middle" class="diagram-label">
 			{#each col.title as line, i (line)}
 				<tspan x={col.cx} dy={i === 0 ? 0 : 14}>{line}</tspan>
 			{/each}
 		</text>
-		<text x={col.cx} y="168" text-anchor="middle" class="diagram-desc">
+		<text x={col.cx} y="148" text-anchor="middle" class="diagram-desc">
 			{#each col.desc as line, i (line)}
 				<tspan x={col.cx} dy={i === 0 ? 0 : 13}>{line}</tspan>
 			{/each}
 		</text>
 	{/each}
 
-	<line x1="32" y1="208" x2="688" y2="208" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
-	<polygon points="688,208 678,203 678,213" fill="#5b21b6" />
+	<line x1="32" y1="188" x2="688" y2="188" stroke="url(#sdt-cont-axis-h)" stroke-width="3.5" stroke-linecap="round" />
+	<polygon points="688,188 678,183 678,193" fill="#5b21b6" />
 </svg>
