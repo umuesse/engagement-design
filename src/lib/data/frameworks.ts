@@ -23,9 +23,10 @@ function item(
 	title: string,
 	shortLabel: string,
 	summary: string,
-	status: FrameworkStatus = 'published'
+	status: FrameworkStatus = 'published',
+	href?: string
 ): FrameworkItem {
-	return { slug, title, shortLabel, status, href: `/frameworks/${slug}`, summary };
+	return { slug, title, shortLabel, status, href: href ?? `/frameworks/${slug}`, summary };
 }
 
 export const frameworkGroups: FrameworkGroup[] = [
@@ -46,6 +47,13 @@ export const frameworkGroups: FrameworkGroup[] = [
 				'RAMP (Drive)',
 				'RAMP',
 				'Verbundenheit, Autonomie, Meisterschaft, Sinn — Pinks Drive-Modell im Anschluss an SDT.'
+			),
+			item(
+				'growth-mindset',
+				'Growth Mindset (Dweck)',
+				'Growth Mindset',
+				'Fixed vs. Growth — wie Annahmen über Fähigkeit Feedback und Fehlerkultur prägen.',
+				'soon'
 			),
 			item('flow', 'Flow Theory', 'Flow', 'Optimale Erfahrung zwischen Über- und Unterforderung.'),
 			item('arcs', 'ARCS-Modell', 'ARCS', 'Attention, Relevance, Confidence, Satisfaction — Motivation strukturieren.')
@@ -69,6 +77,20 @@ export const frameworkGroups: FrameworkGroup[] = [
 		accent: '#7c3aed',
 		items: [
 			item('fogg', 'Fogg Behavior Model', 'Fogg', 'Motivation × Ability × Prompt — operationalisierbar.'),
+			item(
+				'nudging',
+				'Nudging & Choice Architecture',
+				'Nudging',
+				'Defaults, Salienz und Reibung — Entscheidungen gestalten ohne Zwang.',
+				'soon'
+			),
+			item(
+				'cognitive-biases',
+				'Kognitive Verzerrungen',
+				'Biases',
+				'Heuristiken für informiertes Design — nicht für Ausbeutung.',
+				'soon'
+			),
 			item('hook', 'Hook Model', 'Hook', 'Trigger, Action, Reward, Investment — Grenzen erkennen.')
 		]
 	},
@@ -88,9 +110,24 @@ export const frameworkGroups: FrameworkGroup[] = [
 		]
 	},
 	{
+		id: 'media',
+		title: 'Medien & Aufmerksamkeit',
+		description: 'Knappheit der Aufmerksamkeit — Fokus, Interruption und ethische Grenzen.',
+		accent: '#6366f1',
+		items: [
+			item(
+				'attention-economy',
+				'Aufmerksamkeitsökonomie',
+				'Aufmerksamkeit',
+				'Time on task, Ablenkung und Gestaltung für Lernqualität statt reiner Capture.',
+				'soon'
+			)
+		]
+	},
+	{
 		id: 'methods',
 		title: 'Designmethoden & Prozesse',
-		description: 'Vom menschenzentrierten Prozess zur bedeutsamen Erfahrung.',
+		description: 'Vom menschenzentrierten Prozess zur bedeutsamen Erfahrung. Prozess-Vertiefungen (ISO, Double Diamond) unter Designmethoden.',
 		accent: '#059669',
 		items: [
 			item('hcd', 'Human-Centered Design', 'HCD', 'Anknüpfung an UX-Vorwissen im Studium.'),

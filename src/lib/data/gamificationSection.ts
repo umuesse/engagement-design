@@ -59,6 +59,11 @@ export const gamificationSubsections: GamificationSubsection[] = [
 
 export const gamificationFrameworkLinks: GamificationLink[] = [
 	{
+		href: '/gamification/marczewski',
+		label: 'Marczewski Gamification Framework',
+		description: 'Hexad, Design-Schritte und kritische Einordnung — Vertiefung (in Vorbereitung).'
+	},
+	{
 		href: '/frameworks/meaningful-gamification',
 		label: 'Meaningful Gamification / RECIPE',
 		description: 'Reflexion, Wahl, Information und Play — jenseits oberflächlicher Points & Badges.'

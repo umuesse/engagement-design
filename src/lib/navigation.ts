@@ -10,6 +10,7 @@ export const primaryNav: NavItem[] = [
 	{ href: '/modul/projektphase', label: 'Projektphase' },
 	{ href: '/gamification', label: 'Gamification' },
 	{ href: '/frameworks', label: 'Frameworks' },
+	{ href: '/methods', label: 'Designmethoden' },
 	{ href: '/anwendungsfelder', label: 'Anwendungsfelder' }
 ];
 
