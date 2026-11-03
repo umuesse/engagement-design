@@ -71,7 +71,7 @@ export const sdt: FrameworkArticleContent = {
 				{ type: 'h2', text: 'Korrumpierungseffekt' },
 				{
 					type: 'p',
-					text: 'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) beschreibt, dass freiwilliges Interesse nach erwarteten, sichtbaren Belohnungen schwächer sein kann als ohne sie — kein Pauschalurteil gegen Gamification, sondern ein Risiko bei erwarteter, an Teilnahme oder Abschluss gekoppelter Belohnung auf ohnehin interessanten Aufgaben.'
+					text: 'Der Korrumpierungseffekt (Untergrabung intrinsischer Motivation) beschreibt, dass freiwilliges Interesse nach erwarteten, sichtbaren Belohnungen schwächer sein kann als ohne sie — kein pauschales Urteil gegen Anreizsysteme, sondern ein Risiko bei erwarteter, an Teilnahme oder Abschluss gekoppelter Belohnung auf ohnehin interessanten Aufgaben.'
 				},
 				{
 					type: 'p',
