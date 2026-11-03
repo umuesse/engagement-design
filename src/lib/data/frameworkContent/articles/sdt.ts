@@ -97,16 +97,16 @@ export const sdt: FrameworkArticleContent = {
 				{
 					type: 'p',
 					text: 'In der Bedürfnisbefriedigung geht es um den <em>Kontext</em>: Unterstützt ein Setting Wahlmöglichkeiten und Begründungen, klares Feedback und sinnvolle Herausforderung sowie Beziehungen auf Augenhöhe, steigt die Chance, dass Menschen sich freiwillig engagieren und Regeln internalisieren. Untergräbt der Kontext ein Bedürfnis dauerhaft — etwa durch erzwungene Teilnahme, sinnlose Hürden oder Isolation — leidet meist auch die Qualität der Motivation; die drei Bedürfnisse wirken in der Praxis zusammen.'
-				},
+				}
+			],
+			blocks: [
 				{
 					type: 'callout',
 					title: 'Merksatz für Gestaltung',
 					paragraphs: [
 						'Fragt bei jedem Touchpoint: Welcher Regulierungstyp wird angesprochen — und welches Grundbedürfnis wird gestärkt oder geschwächt?'
 					]
-				}
-			],
-			blocks: [
+				},
 				{ type: 'h2', text: 'Relevanz für Engagement Design' },
 				{
 					type: 'p',
