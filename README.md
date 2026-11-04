@@ -44,9 +44,16 @@ Für Deployment ggf. einen [SvelteKit-Adapter](https://svelte.dev/docs/kit/adapt
 - `src/lib/data/` — Inhalte (Inputphase, Framework-Artikel, Anwendungsfelder)
 - `src/lib/components/` — Layout, Navigation, UI-Bausteine
 
-## Cursor (Agent-Skills)
+## Agent Skills
 
-Offizielle Svelte-Skills aus [sveltejs/ai-tools](https://github.com/sveltejs/ai-tools) liegen im Repo unter `.agents/skills/` (`svelte-code-writer`, `svelte-core-bestpractices`). Aktualisieren: `npx skills update -p`.
+Projekt-Skills für Cursor liegen unter `.agents/skills/` (Lockfile: `skills-lock.json`). Aktualisieren: `npx skills update -p`.
+
+- `frontend-design` — [anthropics/skills](https://github.com/anthropics/skills)
+- `next-best-practices` — [vercel-labs/openreview](https://github.com/vercel-labs/openreview)
+- `static-analysis` — [mohitmishra786/low-level-dev-skills](https://github.com/mohitmishra786/low-level-dev-skills)
+- `svelte-code-writer` — [sveltejs/ai-tools](https://github.com/sveltejs/ai-tools)
+- `svelte-core-bestpractices` — [sveltejs/ai-tools](https://github.com/sveltejs/ai-tools)
+- `tdd` — [mattpocock/skills](https://github.com/mattpocock/skills)
 
 ## Technik
 
