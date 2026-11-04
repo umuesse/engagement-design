@@ -44,6 +44,10 @@ Für Deployment ggf. einen [SvelteKit-Adapter](https://svelte.dev/docs/kit/adapt
 - `src/lib/data/` — Inhalte (Inputphase, Framework-Artikel, Anwendungsfelder)
 - `src/lib/components/` — Layout, Navigation, UI-Bausteine
 
+## Cursor (Agent-Skills)
+
+Offizielle Svelte-Skills aus [sveltejs/ai-tools](https://github.com/sveltejs/ai-tools) liegen im Repo unter `.agents/skills/` (`svelte-code-writer`, `svelte-core-bestpractices`). Aktualisieren: `npx skills update -p`.
+
 ## Technik
 
 - [SvelteKit 3](https://kit.svelte.dev/) · [Svelte 5](https://svelte.dev/)
