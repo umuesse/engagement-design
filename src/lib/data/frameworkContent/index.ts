@@ -14,13 +14,11 @@ import { hook } from './articles/hook';
 import { mda } from './articles/mda';
 import { meaningfulGamification } from './articles/meaningful-gamification';
 import { octalysis } from './articles/octalysis';
-import { ramp } from './articles/ramp';
 import { sdt } from './articles/sdt';
 import { serviceDesign } from './articles/service-design';
 
 const articles: FrameworkArticleContent[] = [
 	sdt,
-	ramp,
 	growthMindset,
 	flow,
 	arcs,
